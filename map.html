@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Map</title>
+
+    <!-- ///// Favicon ///// -->
+    <link rel="shortcut icon" href="./Assets/Favicon/favicon.ico" type="image/x-icon">
+
+    <!-- ///// CSS ///// -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ///// Font ///// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- ///// Font Awesome CDN ///// -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+
+    <!-- ///// Header START ///// -->
+
+    <header>
+        <section class="navbar mapNavbar">
+            <div class="logo">
+                <img src="./Assets/Main-Logo/MMF-white-logo2.png" />
+            </div>
+
+            <div class="inputDiv">
+                <input type="search" name="search" placeholder="Search location or community" />
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="mapIconDiv">
+                <div><i class="fas fa-bell bell"></i></div>
+                <div><i class="fas fa-bars bars"></i></div>
+            </div>
+        </section>
+    </header>
+
+    <!-- ///// Header END ///// -->
+
+
+    <!-- ///// Main Body START ///// -->
+
+    <section class="mapMainBody">
+
+        <section class="mapContentContainer">
+            <section>
+                <div class="mapImgContainer"><img src="./Assets/Map/profie-pic-img.png" /></div>
+                <div>
+                    <h1>Sure Name</h1>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="range" value="100" disabled>
+                </div>
+            </section>
+
+            <div class="hrDiv hrMap">
+                <hr />
+            </div>
+
+            <div>
+                <h3>Bio</h3>
+
+                <table class="mapBioTable">
+                    <tr>
+                        <td class="firstTd">Name</td>
+                        <td>:</td>
+                        <td>Surename</td>
+                    </tr>
+                    <tr>
+                        <td class="firstTd">Gender</td>
+                        <td>:</td>
+                        <td>Male / Female</td>
+                    </tr>
+                    <tr>
+                        <td class="firstTd">Address</td>
+                        <td>:</td>
+                        <td>123 street, <br> region country floor 1</td>
+                    </tr>
+                    <tr>
+                        <td class="firstTd">Email</td>
+                        <td>:</td>
+                        <td style="color: #4b83fe;">surename@mail.com</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mapInterestContainer">
+                <h2>Interest / Community</h2>
+                <div>
+                    <i class="fas fa-circle"></i>
+                    <input type="range" value="100" disabled>
+                </div>
+                <div>
+                    <i class="fas fa-circle"></i>
+                    <input type="range" value="100" disabled>
+                </div>
+                <div>
+                    <i class="fas fa-circle"></i>
+                    <input type="range" value="100" disabled>
+                </div>
+
+            </div>
+
+            <div class="hrDiv hrMap">
+                <hr />
+            </div>
+
+            <div class="mapAboutContainer">
+                <h2>About</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure blanditiis quidem adipisci molestias
+                    recusandae optio incidunt quis, facilis est officia, accusantium repellendus ex eligendi dolore,
+                    temporibus consequatur assumenda ab saepe. Dolorem consectetur numquam error modi quae fugiat
+                    recusandae optio incidunt quis, facilis est officia, accusantium repellendus ex eligendi dolore,
+                    architecto ad ea aspernatur harum assumenda esse ipsum itaque inventore! Eaque, voluptas excepturi?
+                </p>
+                <div>
+                    <p>Read More</p>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="osmMapBody">
+            
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=66.66160583496095%2C24.807304640022597%2C67.54463195800783%2C25.186301620540558&amp;layer=mapnik&amp;marker=24.996949237071213%2C67.10311889648438"
+                style="border: 1px solid black">
+            </iframe>
+        
+            <div class="colorNavigator">
+                <div><i class="fas fa-square" style="color: #fc64d4"></i></div>
+                <div><i class="fas fa-square" style="color: #93c01f"></i></div>
+                <div><i class="fas fa-square" style="color: #4b83fe"></i></div>
+                <div><i class="fas fa-square" style="color: #cf6f22;"></i></div>
+            </div>
+        
+        </section>
+
+
+    </section>
+
+    <!-- ///// Main Body END ///// -->
+
+</body>
+
+
+</html>
