@@ -10,6 +10,7 @@ header {
   top: 0;
   background-color: #ffffff;
   padding-bottom: 15px;
+  z-index: 1;
 }
 
 .homePage {
@@ -232,7 +233,7 @@ header {
   .mainHeading {
     font-size: 2.5rem;
   }
-  
+
   .mainBody p {
     width: 90%;
     font-size: 1rem;
@@ -259,7 +260,7 @@ header {
   .section4 > .sec2div2 > p {
     width: 100%;
   }
-  .videoSection{
+  .videoSection {
     width: 80%;
     margin: 50px auto;
   }
@@ -977,8 +978,10 @@ from the "help guides" section due to same styling */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px 20px;
 }
 .brandsTxt h1 {
+  width: 300px;
   color: #6b8a27;
   font-size: 48px;
   font-weight: bold;
@@ -986,6 +989,7 @@ from the "help guides" section due to same styling */
   margin-bottom: 25px;
 }
 .brandsTxt p {
+  width: 250px;
   font-size: 1.3rem;
   color: #646263;
 }
@@ -1001,7 +1005,37 @@ from the "help guides" section due to same styling */
 /* ///// Media Query For About Us Page ///// */
 @media only screen and (max-width: 900px) {
   .aboutUsContainer {
-    padding: 10px 0px 30px 10px;
+    padding: 10px 0px 30px 0px;
+  }
+  .aboutUsContent div h1 {
+    padding-top: 50px;
+    font-size: 42px;
+  }
+  .aboutUsContent div h2 {
+    font-size: 28px;
+  }
+  .aboutUsContent div p {
+    font-size: 1rem;
+  }
+  .ourTeamContainer h1 {
+    font-size: 2.3rem; 
+    width: 250px;
+  }
+
+  .ourTeamContainer h2 {
+    font-size: 1.5rem;
+  }
+
+  .ourTeamDivContainer {
+    padding: 30px 10px;
+  }
+
+  .ourTeamDiv {
+    margin: 20px 10px;
+  }
+  .ourTeamDiv h2 {
+    font-size: 22px;
+    top: 35%;
   }
 
   .aboutUsContent {
@@ -1012,16 +1046,15 @@ from the "help guides" section due to same styling */
     width: 90%;
   }
 
-  /* .ourTeamDiv {
-    width: 60%;
-  }
-  .ourTeamDiv img {
-    width: 60%;
-  } */
-
   .brandsTxt {
     width: 80%;
     margin-bottom: 40px;
+  }
+  .brandsTxt h1 , .brandsTxt p  {
+    width: auto;
+  }
+  .brandsTxt h1 {
+    font-size: 2.3rem;
   }
   .brandsIcons {
     width: 80%;
@@ -1034,10 +1067,6 @@ from the "help guides" section due to same styling */
   .aboutUsContent {
     padding-left: 0;
   }
-
-  /* .ourTeamDiv {
-    width: 90%;
-  } */
 
   .brandsIcons img {
     width: 60%;
@@ -1337,7 +1366,6 @@ from the "help guides" section due to same styling */
     cursor: pointer;
     margin-top: 10px;
   }
-
 }
 
 /* ///// Profile Page ///// */
@@ -1549,17 +1577,20 @@ fieldset form label {
   font-size: 1.3rem;
   font-weight: bold;
   color: black;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
 }
 
 fieldset form input,
 .selectBox,
 fieldset form textarea {
-  width: 100%;
+  width: 90%;
   padding: 12px;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
   border: none;
-  background-color: lightgray;
+  background-color: rgb(238, 235, 235);
   margin-bottom: 25px;
   outline: none;
 }
@@ -1608,9 +1639,25 @@ fieldset form input::placeholder {
 
 .formContainer {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
+}
+.contactUsBanner {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 500px) {
+  .formContainer fieldset {
+    width: 100%;
+    margin: 10px;
+  }
+  .formContainer label {
+    font-size: 1.2rem;
+  }
+  .formContainer input , .formContainer textarea {
+    font-size: 1rem;
+    width: 95%;
+  }
 }
 
 /* ///// Inbox Page ///// */
@@ -1850,7 +1897,6 @@ fieldset form input::placeholder {
   border-radius: 5px;
 }
 
-
 /* ///// Timeline Bar ///// */
 
 /* The actual timeline (the vertical ruler) */
@@ -1860,7 +1906,7 @@ fieldset form input::placeholder {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #87c930;
@@ -1880,7 +1926,7 @@ fieldset form input::placeholder {
 
 /* The circles on the timeline */
 .containerTimline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -1893,7 +1939,7 @@ fieldset form input::placeholder {
 }
 
 /* ///// Responsive CSS for Subpages //// */
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
   .subpageTopBody > section {
     width: 45%;
   }
@@ -1913,12 +1959,13 @@ fieldset form input::placeholder {
     padding: 50px;
   }
   .timeline::after {
-    left: 2.7rem
+    left: 2.7rem;
   }
 }
 
 @media only screen and (max-width: 950px) {
-  .subpageTopBody > section, .subpageTopBody > div {
+  .subpageTopBody > section,
+  .subpageTopBody > div {
     width: 80%;
   }
   .subpageContent {
@@ -1936,7 +1983,7 @@ fieldset form input::placeholder {
   .containerTimline::after {
     left: -40px;
   }
- 
+
   .timeline::after {
     left: 1.4rem;
   }
@@ -1944,7 +1991,7 @@ fieldset form input::placeholder {
 
 @media only screen and (max-width: 600px) {
   .subpageTopBody {
-    padding: 20px 20px 80px 20px ;
+    padding: 20px 20px 80px 20px;
   }
   .subpageTopBody h1 {
     font-size: 35px;
