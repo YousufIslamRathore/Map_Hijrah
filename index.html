@@ -232,9 +232,71 @@
             </div>
         </section>
     </footer>
+    
+    
+    
+    <!-- ///// SIGN IN POP UP MODAL ///// -->
+
+    <section class="modal fade" id="signUpModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content forBorderRadius">
+                <section class="modal-body wholeModal">
+                    <section class="modalFirstSection">
+                        <div><img src="./Assets/Main-Logo/MMF-white-logo2.png" /></div>
+                        <h1>Already <br /> a member?</h1>
+                        <small>Please keep connected with us</small>
+                        <button>Log In</button>
+                    </section>
+                    <section class="signUpProfileMainSection modalSignUpSection">
+                        <h1>Sign up for free</h1>
+                        <section class="resSUP">
+                            <div>
+                                <label for="username">
+                                    Username
+                                </label> <br />
+                                <input type="text" name="username" id="username">
+                            </div>
+                        </section>
+                        <section class="resSUP">
+                            <div>
+                                <label for="email">
+                                    Email 
+                                </label> <br />
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </section>
+                        <section class="resSUP">
+                            <div>
+                                <label for="password">
+                                    Password
+                                </label> <br />
+                                <input type="password" name="password" id="password">
+                                <i class="fas fa-solid fa-eye" onclick="showPassword(this)"></i>
+                            </div>
+                        </section>
+                        <section class="resSUP">
+                            <div>
+                                <label for="confirmPassword">
+                                    Confirm Password
+                                </label> <br />
+                                <input type="password" name="confirmPassword" id="confirmPassword">
+                                <i class="fas fa-solid fa-eye" onclick="showPassword(this)"></i>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="g-recaptcha recaptchaDiv" data-sitekey="6LfX-qEeAAAAAAm3VkldTx_fI_9T1AiVuWVDJ5sl"></div>
+                        </section>
+
+                        <button><a href="./SignUpProfile.html"> Sign Up </a></button>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
 </body>
 
-<script src="app.js"></script>
+<script src="app.js"></script>  
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

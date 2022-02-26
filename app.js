@@ -30,3 +30,12 @@ function genderSelection(element, identity) {
         element.previousElementSibling.previousElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
     }
 }
+
+function showPassword(element) {
+    if(element.previousElementSibling.type == "password") {
+        element.previousElementSibling.type = "text"
+    }
+    else {
+        element.previousElementSibling.type = "password"
+    }
+}

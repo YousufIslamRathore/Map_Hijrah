@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Subpage 1</title>
+    <title>Sign Up Main Page</title>
 
     <!-- ///// Favicon ///// -->
     <link rel="shortcut icon" href="./Assets/Favicon/favicon.ico" type="image/x-icon">
@@ -28,11 +28,13 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 
+    <!-- ///// Recaptcha ///// -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
-<body>
 
+<body>
 
 
     <!-- ///// Header START ///// -->
@@ -60,7 +62,8 @@
                     </li>
                     <li><a href="aboutUs.html">Contact Us</a></li>
                     <li><a href="map.html">The Map</a></li>
-                    <li><a href="signUp.html" class="navBtn" id="signupLink">Sign Up</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#signUpModal" class="navBtn"
+                            id="signupLink">Sign Up</a></li>
                     <li><a href="loginForm.html" class="navBtn" id="loginLink">Log In</a></li>
                 </ul>
                 <img src="./Assets/menu.png" class="menu-icon" onclick="menutoggle()">
@@ -68,85 +71,6 @@
         </section>
     </header>
     <!-- ///// Header END ///// -->
-
-    <!-- ///// Body START ///// -->
-
-    <section class="subpageTopBody">
-        <section>
-            <h1>OPENING A BANK ACCOUNT</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit hic laboriosam corporis cum maxime
-                excepturi fugit mollitia ducimus, alias itaque vitae esse exercitationem nemo tempora impedit velit.
-                Itaque, officiis! Dolorem ad rerum aliquam ipsum saepe eligendi cum optio ad rerum aliquam ipsum saepe
-                cumque reprehenderit</p>
-            <div>
-                <button class="filledBtn">Download Guide</button>
-                <button>Share Guide</button>
-            </div>
-        </section>
-
-        <div>
-            <img src="./Assets/Sub-Pages/Maps12345 11-01.png" />
-        </div>
-    </section>
-
-
-    <!-- //// 2nd Section Main //// -->
-
-    <section class="subpageTopSection">
-        <div class="titleDiv">
-            <h1>RELATED DETAILS</h1>
-            <div class="hrDiv">
-                <hr />
-            </div>
-        </div>
-    </section>
-
-    <section class="timeline subpageContentContainer">
-        <section class="containerTimline right subpageContent">
-            <section>
-                <h1>STEP 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis voluptates voluptate eos odio ducimus vel harum, quo quisquam quasi maiores. Maiores neque tenetur amet omnis hic cum, recusandae eius esse nihil reprehenderit? A delectus vero repellendus quod quidem. Voluptas ex pariatur commodi illum officia ratione labore distinctio quibusdam ullam? Consectetur magnam, hic in ut et quae eius quos eaque perspiciatis neque corrupti necessitatibus cumque dicta, aliquam unde sapiente totam mollitia tempora veniam ex explicabo! Itaque a perspiciatis nostrum atque!</p>
-                <span>Learn More <i class="fas fa-solid fa-angle-right"></i></span>
-            </section>
-            <div>
-                <img src="./Assets/Sub-Pages/dummyPic.png" />
-            </div>
-        </section> 
-
-        <section class="containerTimline right subpageContent">
-            <section>
-                <h1>STEP 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis voluptates voluptate eos odio ducimus vel harum, quo quisquam quasi maiores. Maiores neque tenetur amet omnis hic cum, recusandae eius esse nihil reprehenderit? A delectus vero repellendus quod quidem. Voluptas ex pariatur commodi illum officia ratione labore distinctio quibusdam ullam? Consectetur magnam, hic in ut et quae eius quos eaque perspiciatis neque corrupti necessitatibus cumque dicta, aliquam unde sapiente totam mollitia tempora veniam ex explicabo! Itaque a perspiciatis nostrum atque!</p>
-                <span>Learn More <i class="fas fa-solid fa-angle-right"></i></span>
-            </section>
-            <div>
-                <img src="./Assets/Sub-Pages/dummyPic.png" />
-            </div>
-        </section> 
-
-        <section class="containerTimline right subpageContent">
-            <section>
-                <h1>STEP 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis voluptates voluptate eos odio ducimus vel harum, quo quisquam quasi maiores. Maiores neque tenetur amet omnis hic cum, recusandae eius esse nihil reprehenderit? A delectus vero repellendus quod quidem. Voluptas ex pariatur commodi illum officia ratione labore distinctio quibusdam ullam? Consectetur magnam, hic in ut et quae eius quos eaque perspiciatis neque corrupti necessitatibus cumque dicta, aliquam unde sapiente totam mollitia tempora veniam ex explicabo! Itaque a perspiciatis nostrum atque!</p>
-                <span>Learn More <i class="fas fa-solid fa-angle-right"></i></span>
-            </section>
-            <div>
-                <img src="./Assets/Sub-Pages/dummyPic.png" />
-            </div>
-        </section> 
-
-        <section class="containerTimline right subpageContent">
-            <section>
-                <h1>STEP 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis voluptates voluptate eos odio ducimus vel harum, quo quisquam quasi maiores. Maiores neque tenetur amet omnis hic cum, recusandae eius esse nihil reprehenderit? A delectus vero repellendus quod quidem. Voluptas ex pariatur commodi illum officia ratione labore distinctio quibusdam ullam? Consectetur magnam, hic in ut et quae eius quos eaque perspiciatis neque corrupti necessitatibus cumque dicta, aliquam unde sapiente totam mollitia tempora veniam ex explicabo! Itaque a perspiciatis nostrum atque!</p>
-                <span>Learn More <i class="fas fa-solid fa-angle-right"></i></span>
-            </section>
-            <div>
-                <img src="./Assets/Sub-Pages/dummyPic.png" />
-            </div>
-        </section> 
-
-    </section>  
 
     
 

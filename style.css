@@ -2234,3 +2234,89 @@ fieldset form input::placeholder {
     font-size: 16px;
   }
 }
+
+
+/* ///// MODAL CSS ///// */
+/* ----- MODAL SIGN UP FORM ----- */
+.forBorderRadius {
+  border-radius: 15px !important;
+  border: none !important;
+}
+
+.wholeModal {
+  display: flex;
+  min-height: 90vh;
+  padding: 0 !important;
+}
+.modalFirstSection {
+  width: 30%;
+  background-color: #93c01f;
+  border-radius: 15px 0 0 15px;
+  padding: 30px;
+}
+.modalFirstSection img {
+  width: 100%; 
+}
+.modalFirstSection div {
+  margin-bottom: 60px;
+}
+.modalFirstSection h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px !important ;
+  margin-bottom: 20px;
+}
+.modalFirstSection small {
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.modalFirstSection button {
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  padding: 5px;
+  width: 130px;
+  border-radius: 12px;
+}
+.modalSignUpSection {
+  width: 70%;
+  padding: 0px 100px !important;
+}
+.modalSignUpSection h1 {
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+  color: #93c01f;
+  font-weight: bold;
+  margin: 0 !important;
+  padding: 20px 0 10px 0;
+}
+.modalSignUpSection section {
+  margin: 10px 0px;
+}
+.modalSignUpSection button {
+  display: block;
+  width: 300px;
+  background-color: #93c01f;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+}
+.modalSignUpSection a {
+  color: white;
+}
+.modalSignUpSection a:hover {
+  color: white;
+}
+.modalSignUpSection i {
+  color: #bbe7f7;
+}
+/* //// I'm not a robot //// */
+.recaptchaDiv {
+  border: 3px solid #cfe9f3;
+  border-radius: 12px;
+  margin: auto;
+}
