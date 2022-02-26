@@ -2001,3 +2001,149 @@ fieldset form input::placeholder {
     margin: 20px auto 0;
   }
 }
+
+/* ///// Sign Up Main Page ///// */
+
+.signUpProfileTopSection {
+  background: linear-gradient(to bottom, #ffffff, #bbe7f7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signUpDiv1 {
+  width: 50%;
+  padding-left: 80px;
+}
+.signUpDiv1 h1 {
+  color: #6b8927;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.signUpDiv1 p {
+  color: #3a6e83;
+}
+.signUpDiv2 {
+  width: 40%;
+}
+.signUpDiv2 img {
+  width: 100%;
+}
+
+.signUpProfileMainSection {
+  padding: 80px 150px;
+}
+.signUpProfileMainSection > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 36px 0px;
+}
+.dpSUP {
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+.dpSUP div {
+  border-radius: 50%;
+  background-color: #646263;
+}
+.dpSUP img {
+  border-radius: 50%;
+  width: 200px;
+  background-color: white;
+  margin: 10px;
+}
+.dpSUP section {
+  padding: 30px 50px;
+}
+.dpSUP section h3 {
+  color: #5c8795;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.dpSUP section input::-webkit-file-upload-button {
+  border-radius: 5px;
+  border: 3px solid #cacaca;
+  color: #cacaca;
+}
+.dpSUP section input {
+  color: rgba(0, 0, 0, 0) ;
+}
+.signUpProfileMainSection label {
+  color: #5c8795;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.signUpProfileMainSection > section > div > input, .signUpProfileMainSection select {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  padding: 6px 12px;
+  border: 3px solid #cfe9f3;
+  background-color: #f1fbff;
+  color: #7c9ad0;
+}
+.signUpProfileMainSection > section > div > input::placeholder {
+  color: #bfe1ee;
+}
+
+.namesSUP div {
+  width: 46%;
+}
+.resSUP div {
+  width: 100%;
+}
+.citySUP div {
+  width: 100%;
+}
+.phoneSUP div {
+  width: 46%;
+}
+.dobSUP label {
+  width: 100%;
+}
+.dobDiv1 {
+  width: 46%;
+}
+.dobDiv2 {
+  width: 15%;
+}
+.dobDiv3 {
+  width: 28%;
+}
+.genderSUP {
+  display: flex;
+  justify-content: flex-start !important;
+}
+.genderSUP > label {
+  width: 100%;
+}
+.genderSUP section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 80px;
+  margin-top: 5px;
+}
+.genderIconDiv {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #c7c1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.genderIconDiv i {
+  font-size: 30px;
+  color: white;
+}
+.genderSUP p {
+  margin: 0;
+  font-size: 18px;
+  color: #9ba7b3;
+}
