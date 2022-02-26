@@ -2086,9 +2086,6 @@ fieldset form input::placeholder {
   background-color: #f1fbff;
   color: #7c9ad0;
 }
-.signUpProfileMainSection > section > div > input::placeholder {
-  color: #bfe1ee;
-}
 
 .namesSUP div {
   width: 46%;
