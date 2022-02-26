@@ -2147,3 +2147,17 @@ fieldset form input::placeholder {
   font-size: 18px;
   color: #9ba7b3;
 }
+.btnRegister {
+  padding: 6px 60px;
+  color: white;
+  background-color: #87c930;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.btnRegister:hover {
+  box-shadow: 3px 3px 3px grey;
+}
