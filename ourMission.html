@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Our Mission</title>
+    <title>Sign Up Main Page</title>
 
     <!-- ///// Favicon ///// -->
     <link rel="shortcut icon" href="./Assets/Favicon/favicon.ico" type="image/x-icon">
@@ -28,9 +28,14 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 
+    <!-- ///// Recaptcha ///// -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
+
 <body>
+
 
     <!-- ///// Header START ///// -->
 
@@ -39,7 +44,7 @@
             <div class="logo">
                 <img src="./Assets/Main-Logo/MMF-white-logo2.png" alt="">
             </div>
-            <nav class="navlinks">
+            <div class="navlinks">
                 <ul id="MenuItems">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
@@ -54,16 +59,17 @@
                             <a class="dropdown-item" href="supportUs.html">Support Us</a>
                             <a class="dropdown-item" href="ourMission.html">Our Mission</a>
                         </div>
-                    </li>                    <li><a href="contactUs.html">Contact Us</a></li>
+                    </li>
+                    <li><a href="aboutUs.html">Contact Us</a></li>
                     <li><a href="map.html">The Map</a></li>
-                    <li><a href="signUp.html" class="navBtn" id="signupLink">Sign Up</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#signUpModal" class="navBtn"
+                            id="signupLink">Sign Up</a></li>
                     <li><a href="loginForm.html" class="navBtn" id="loginLink">Log In</a></li>
                 </ul>
                 <img src="./Assets/menu.png" class="menu-icon" onclick="menutoggle()">
-            </nav>
+            </div>
         </section>
     </header>
-
     <!-- ///// Header END ///// -->
 
 

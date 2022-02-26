@@ -28,6 +28,9 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 
+    <!-- ///// Recaptcha ///// -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 
@@ -59,7 +62,8 @@
                     </li>
                     <li><a href="aboutUs.html">Contact Us</a></li>
                     <li><a href="map.html">The Map</a></li>
-                    <li><a href="signUp.html" class="navBtn" id="signupLink">Sign Up</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#signUpModal" class="navBtn"
+                            id="signupLink">Sign Up</a></li>
                     <li><a href="loginForm.html" class="navBtn" id="loginLink">Log In</a></li>
                 </ul>
                 <img src="./Assets/menu.png" class="menu-icon" onclick="menutoggle()">
