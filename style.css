@@ -2137,15 +2137,21 @@ fieldset form input::placeholder {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 .genderIconDiv i {
   font-size: 30px;
   color: white;
 }
-.genderSUP p {
+.genderSUP section label {
   margin: 0;
   font-size: 18px;
+  font-weight: normal;
   color: #9ba7b3;
+  cursor: pointer;
+}
+.hiddenRadioInput {
+  display: none;
 }
 .btnRegister {
   padding: 6px 60px;

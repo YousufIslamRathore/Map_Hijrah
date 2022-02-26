@@ -162,17 +162,20 @@
         </section>
         <section class="genderSUP">
             <label>Gender</label>
-            <section>
-                <div class="genderIconDiv" style="background-color: rgb(25, 168, 25);"><i class="fas fa-solid fa-mars"></i></div>
-                <p>Male</p>
+            <section onclick="genderSelection(this, 0)">
+                <div class="genderIconDiv"><i class="fas fa-solid fa-mars"></i></div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" class="hiddenRadioInput">
             </section>
-            <section>
+            <section onclick="genderSelection(this, 1)">
                 <div class="genderIconDiv"><i class="fas fa-solid fa-venus"></i></div>
-                <p>Female</p>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" class="hiddenRadioInput">
             </section>
-            <section>
+            <section onclick="genderSelection(this, 2)">
                 <div class="genderIconDiv"><i class="fas fa-solid fa-circle-notch" style="font-size: 25px;"></i></div>
-                <p>Others</p>
+                <label for="others">Others</label>
+                <input type="radio" name="gender" id="others" value="others" class="hiddenRadioInput">
             </section>
         </section>
         <section>
