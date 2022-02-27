@@ -1730,7 +1730,10 @@ fieldset form input::placeholder {
   cursor: pointer;
   box-shadow: 2px 2px 10px grey;
 }
-
+.inboxMainMiddleSection {
+  overflow-y: scroll;
+  height: 74vh;
+}
 .inboxBothSections {
   display: flex;
   align-items: flex-start;
