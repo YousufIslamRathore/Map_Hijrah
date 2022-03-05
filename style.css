@@ -1398,23 +1398,26 @@ from the "help guides" section due to same styling */
   position: absolute;
   top: -30px;
   max-height: 200px;
+  position: relative;
 }
 .profileContentHead section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.profileContentHead {
-  position: relative;
-}
 .profileContentHead section img {
   border: 5px solid #93c01f;
   width: 100%;
 }
-.profileContentHead small {
-  color: #504e4f;
+.profileContentHead h1 {
+  margin: 0;
+  margin-top: 10px;
 }
-
+.profileContentHead p {
+  margin-bottom: 5px;
+  color: #504e4f;
+  font-size: small;
+}
 .profileSection2MainDiv {
   display: flex;
   justify-content: space-around;
