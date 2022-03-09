@@ -1681,16 +1681,97 @@ fieldset form input::placeholder {
   min-height: 100vh;
   position: relative;
   background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .inboxHeader {
   padding: 20px;
   border-bottom: 1px solid #c7c1c1;
+  border-left: 1px solid #c7c1c1;
   box-shadow: 2px 0px 5px #c7c1c1;
   background-color: white;
+  top: 0;
   position: relative;
+  height: 100px;
 }
-
+.userListInboxHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inboxPageSearchIcon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inboxPageSearchIcon i {
+  font-size: 25px;
+}
+.userListInboxHeader h1 {
+  font-weight: normal;
+  margin-right: 10px;
+}
+.userListInboxHeader i {
+  padding-left: 10px  ;
+}
+.userListContainer {
+  background-color: #ffffff;
+  overflow-y: scroll;
+  height: 86vh;
+}
+.userListContainer > div {
+  border-bottom: 1px solid #333;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+.userListContainer .inboxProfileImgDiv {
+  width: 55px;
+  height: 55px;
+}
+.userListNames {
+  margin-left: 15px;
+}
+.userListContainer h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.userListContainer p {
+  font-size: 14px;
+}
+.userListIcons {
+  margin-left: auto;
+  text-align: right;
+}
+.userListIcons p {
+  font-size: 12px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+}
+.userListIcons span {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: small;
+  background-color: #87c930;
+  color: white;
+}
+.userListIcons div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75px;
+}
+.activeUserList {
+  background-color: whitesmoke;
+}
 .inboxHeader section {
   display: flex;
 }
@@ -1708,7 +1789,7 @@ fieldset form input::placeholder {
 }
 
 .inboxFooter {
-  width: 70%;
+  width: 75%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1746,11 +1827,14 @@ fieldset form input::placeholder {
 }
 
 .userListSection {
-  width: 30%;
+  width: 25%;
+  height: 100vh;
+  box-shadow: 0px 5px 5px grey;
 }
 
 .mainChatSection {
-  width: 70%;
+  width: 75%;
+  margin-left: auto;
 }
 .inboxMainMiddleSection {
   overflow-y: scroll;
