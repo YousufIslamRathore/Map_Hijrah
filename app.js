@@ -51,3 +51,25 @@ function signUpProfileToggle(element) {
         element.style.color = "rgb(189, 189, 189)"
     }
 }
+
+function subpage1() {
+    window.location.assign("./subpage1.html")
+}
+function subpage2() {
+    window.location.assign("./subpage2.html")
+}
+function subpage3() {
+    window.location.assign("./subpage3.html")
+}
+function subpage4() {
+    window.location.assign("./subpage4.html")
+}
+function subpage5() {
+    window.location.assign("./subpage5.html")
+}
+function subpage6() {
+    window.location.assign("./subpage6.html")
+}
+function subpage7() {
+    window.location.assign("./subpage7.html")
+}
