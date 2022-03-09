@@ -32,6 +32,7 @@ header {
 
 .logo > img {
   width: 120px;
+  cursor: pointer;
 }
 
 .navlinks ul {

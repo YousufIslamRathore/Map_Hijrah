@@ -52,6 +52,10 @@ function signUpProfileToggle(element) {
     }
 }
 
+function logoDirector() {
+    window.location.assign("./index.html")
+}
+
 function subpage1() {
     window.location.assign("./subpage1.html")
 }
