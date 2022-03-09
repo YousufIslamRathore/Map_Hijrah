@@ -33,8 +33,21 @@ function genderSelection(element, identity) {
 function showPassword(element) {
     if(element.previousElementSibling.type == "password") {
         element.previousElementSibling.type = "text"
+        element.className = "fas fa-solid fa-eye-slash"
     }
     else {
         element.previousElementSibling.type = "password"
+        element.className = "fas fa-solid fa-eye"
+    }
+}
+
+function signUpProfileToggle(element) {
+    if(element.className == "fas fa-solid fa-toggle-off") {
+        element.className = "fas fa-solid fa-toggle-on"
+        element.style.color = "#94b42f"
+    }
+    else{
+        element.className = "fas fa-solid fa-toggle-off"
+        element.style.color = "rgb(189, 189, 189)"
     }
 }
