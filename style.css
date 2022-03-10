@@ -84,10 +84,9 @@ header {
 .mainHeading {
   color: #6b8927;
   font-size: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
-
 .mainBody p {
   margin: auto;
   max-width: 950px;
@@ -95,11 +94,9 @@ header {
   line-height: 1.3rem;
   padding: 0 20px;
 }
-
 .mainBody div {
-  margin-top: 30px;
+  margin-top: 20px;
 }
-
 .mainBody button {
   background-color: #bcd53b;
   border: none;
@@ -125,10 +122,11 @@ header {
 .sec2div1 {
   width: 50%;
   padding: 15px;
+  text-align: center;
 }
 
 .sec2div1 img {
-  width: 100%;
+  width: 80%;
 }
 
 .sec2div2 {
@@ -137,7 +135,7 @@ header {
 }
 
 .sec2div2 h1 {
-  width: 85%;
+  width: 80%;
   font-size: 32px;
   color: #bcd53b;
   margin-bottom: 20px;
@@ -205,24 +203,26 @@ header {
   flex-wrap: wrap;
 }
 
-.section4 .sec2div2 {
-  padding-left: 80px;
+.section4 > .sec2div2 > section {
+  width: 70%;
+  margin-left: auto;
+}
+.section4 > .sec2div2 > section >  h1,
+.section4 > .sec2div2 > section > p {
+  width: 100%;
 }
 
-.section4 > .sec2div2 > h1,
-.section4 > .sec2div2 > p {
-  width: 80%;
-}
+
 
 .videoSection {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin-top: 100px;
 }
 .videoSection div {
-  padding: 15px;
+  padding: 10px;
   background-color: #93c01f;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 .videoSection div iframe {
   border-radius: 25px;
@@ -230,9 +230,9 @@ header {
 
 .section5 {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-image: url("./Assets/Backgroud-Images/Maps12345\ 2-01.png");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1150,6 +1150,10 @@ from the "help guides" section due to same styling */
   padding: 30px;
   box-shadow: 0px 2px 5px grey;
 }
+.mapMainBody .mapContentContainer {
+  overflow-y: scroll;
+  height: 86vh;
+}
 
 .mapContentContainer section {
   display: flex;
@@ -1249,6 +1253,7 @@ from the "help guides" section due to same styling */
 
 .osmMapBody {
   width: 70%;
+  height: 86vh;
   position: relative;
 }
 .osmMapBody iframe {
@@ -1259,19 +1264,22 @@ from the "help guides" section due to same styling */
 .colorNavigator {
   position: absolute;
   right: 20px;
-  bottom: 30px;
-  background-color: #ffffff;
+  bottom: 20px;
+  background-color: whitesmoke;
   border-radius: 15px;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 500px;
-  height: 150px;
+  width: 350px;
+  height: 120px;
 }
 .colorNavigator div {
   width: 50%;
+}
+.colorNavigator i {
+  font-size: 25px;
 }
 
 /* ///// Map END ///// */
@@ -1422,9 +1430,10 @@ from the "help guides" section due to same styling */
 .profileContentHead h1 {
   margin: 0;
   margin-top: 10px;
+  padding-top: 10px;
 }
 .profileContentHead p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #504e4f;
   font-size: small;
 }
@@ -1448,23 +1457,22 @@ from the "help guides" section due to same styling */
 .profileSidesContainer {
   display: flex;
   margin-top: 30px;
+  justify-content: space-between;
 }
 
 .profileHalfSide1 {
-  width: 50%;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 42%;
 }
 
 .profileSidesContainer h3 {
-  font-size: 30px;
+  font-size: 26px;
   padding-left: 7px;
   margin-bottom: 20px;
 }
 
 .profileHalfSide1 td {
   color: #9ba7b3;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.3rem;
   font-weight: lighter;
 }
@@ -1476,8 +1484,9 @@ from the "help guides" section due to same styling */
 }
 
 .profileHalfSide1 i {
-  font-size: 50px;
+  font-size: 35px;
   color: #94b42f;
+  margin-top: 10px;
 }
 
 .profileHalfSide2 {
@@ -1563,17 +1572,19 @@ fieldset {
   }
 }
 
-.formBox {
+
+.loginFormBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60vh
+}
+.loginFormBanner {
   min-height: 100vh;
   background-image: url("./Assets/Backgroud-Images/Maps12345\ 8-01.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-.loginFormBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 fieldset legend {
@@ -1601,7 +1612,7 @@ fieldset form textarea {
   width: 90%;
   padding: 12px;
   border-radius: 10px;
-  font-size: 1.2rem;
+  font-size: 16px;
   border: none;
   background-color: rgb(238, 235, 235);
   margin-left: 25px;
@@ -1632,7 +1643,7 @@ fieldset form button {
 }
 
 fieldset > p {
-  color: white;
+  color: black;
   width: 100%;
   text-align: center;
 }
@@ -1654,11 +1665,11 @@ fieldset form input::placeholder {
 .formContainer {
   display: flex;
   margin: 0 auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contactUsBanner {
-  padding-bottom: 50px;
   margin-bottom: 0;
 }
 @media only screen and (max-width: 500px) {
