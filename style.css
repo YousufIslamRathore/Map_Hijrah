@@ -705,6 +705,7 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .helpGuidesContent {
@@ -1652,7 +1653,7 @@ fieldset > p a {
   color: royalblue;
 }
 
-form button:hover {
+fieldset form button:hover {
   width: 80%;
 }
 
@@ -1978,26 +1979,28 @@ fieldset form input::placeholder {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 60px;
 }
 .subpageContent > section {
-  width: 80%;
-  padding-right: 100px;
+  width: 90%;
+  margin-bottom: 20px;
 }
 .subpageContent > div {
+  /* margin-left: auto; */ 
   width: 20%;
   border-radius: 5px;
 }
 
 .subpageContent h1 {
   color: #3b6c82;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 .subpageContent p {
-  line-height: 1.3rem;
+  line-height: 16px;
   color: #3b6c82;
   margin: 0;
   margin-bottom: 5px;
@@ -2016,6 +2019,49 @@ fieldset form input::placeholder {
   border-radius: 5px;
 }
 
+.osSubpageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.osSubpageContainer form {
+  border: 1px solid grey;
+  padding: 25px;
+  border-radius: 15px;
+}
+.osSubpageContainer label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.osSubpageContainer label p {
+  width: 180px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  color: #504e4f;
+}
+.osSubpageContainer label input {
+  outline: none;
+  box-shadow: 0px 0px 5px 5px #87c930;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 400px;
+}
+.osSubpageContainer button {
+  background-color: #87c930;
+  width: 150px;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
 /* ///// Timeline Bar ///// */
 
 /* The actual timeline (the vertical ruler) */
@@ -2030,7 +2076,7 @@ fieldset form input::placeholder {
   width: 6px;
   background-color: #87c930;
   top: 80px;
-  bottom: 300px;
+  bottom: 440px;
   margin-left: -3px;
   left: 7rem;
 }

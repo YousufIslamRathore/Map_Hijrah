@@ -77,3 +77,9 @@ function subpage6() {
 function subpage7() {
     window.location.assign("./subpage7.html")
 }
+function subpage8() {
+    window.location.assign("./subpage8.html")
+}
+function subpage9() {
+    window.location.assign("./subpage9.html")
+}
