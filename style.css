@@ -2452,8 +2452,9 @@ fieldset form input::placeholder {
 .modalSignUpSection a:hover {
   color: white;
 }
-.modalSignUpSection i {
+.modalSignUpSection section div i {
   color: #bbe7f7;
+  font-size: 20px;
 }
 /* //// I'm not a robot //// */
 .recaptchaDiv {
