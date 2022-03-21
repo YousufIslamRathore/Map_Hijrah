@@ -83,7 +83,7 @@ header {
 
 .mainHeading {
   color: #6b8927;
-  font-size: 40px;
+  font-size: 48px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -854,24 +854,26 @@ from the "help guides" section due to same styling */
 .aboutUsContent div h1 {
   display: inline-block;
   color: #6b8a27;
-  font-size: 3rem;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 25px;
   border-bottom: 6px solid #94b42f;
   font-weight: bold;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .aboutUsContent div h2 {
   color: #6b8927;
   font-weight: normal;
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
 .aboutUsContent div p {
   color: #646263;
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-bottom: 10px;
   font-weight: lighter;
+  line-height: 1.5rem;
 }
 .readMore {
   color: #7c9ad0 !important;
@@ -880,7 +882,7 @@ from the "help guides" section due to same styling */
 }
 
 .aboutUsContent img {
-  width: 100%;
+  width: 80%;
 }
 
 .ourTeamContainer {
@@ -890,7 +892,7 @@ from the "help guides" section due to same styling */
 }
 .ourTeamContainer h1 {
   color: #646263;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: bold;
   text-align: center;
   width: 40%;
@@ -901,7 +903,7 @@ from the "help guides" section due to same styling */
   color: #6b8a27;
   text-align: center;
   font-weight: lighter;
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -1021,27 +1023,17 @@ from the "help guides" section due to same styling */
   }
   .aboutUsContent div h1 {
     padding-top: 50px;
-    font-size: 42px;
-  }
-  .aboutUsContent div h2 {
-    font-size: 28px;
-  }
-  .aboutUsContent div p {
-    font-size: 1rem;
   }
   .ourTeamContainer h1 {
     font-size: 2.3rem;
     width: 250px;
   }
-
   .ourTeamContainer h2 {
     font-size: 1.5rem;
   }
-
   .ourTeamDivContainer {
     padding: 30px 10px;
   }
-
   .ourTeamDiv {
     margin: 20px 10px;
   }
@@ -1049,15 +1041,12 @@ from the "help guides" section due to same styling */
     font-size: 22px;
     top: 35%;
   }
-
   .aboutUsContent {
     justify-content: center;
   }
-
   .aboutUsContent div {
     width: 90%;
   }
-
   .brandsTxt {
     width: 80%;
     margin-bottom: 40px;
@@ -1392,6 +1381,9 @@ from the "help guides" section due to same styling */
 }
 .profileSection2MainDiv > div > div {
   margin-right: 10px;
+}
+.profileSection2MainDiv > div > p {
+  color: #3a6e83;
 }
 
 .profileSidesContainer {
@@ -2128,7 +2120,7 @@ fieldset form input::placeholder {
 .signUpDiv1 h1 {
   color: #6b8927;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 .signUpDiv1 p {
