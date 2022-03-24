@@ -83,3 +83,19 @@ function subpage8() {
 function subpage9() {
     window.location.assign("./subpage9.html")
 }
+
+function inputToTextArea(e) {
+    if(e.innerHTML == "Text Box") {
+        e.previousElementSibling.previousElementSibling.className = "signUpProfileHidden"
+        e.previousElementSibling.className = "signUpProfileShow"
+        e.previousElementSibling.value = e.previousElementSibling.previousElementSibling.value
+        e.innerHTML = "Single-Line Field"
+    }
+    else if (e.innerHTML == "Single-Line Field") {
+        e.previousElementSibling.previousElementSibling.className = "signUpProfileShow"
+        e.previousElementSibling.className = "signUpProfileHidden"
+        e.previousElementSibling.previousElementSibling.value = e.previousElementSibling.value
+        e.innerHTML = "Text Box"
+    }
+}
+

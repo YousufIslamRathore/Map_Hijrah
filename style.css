@@ -217,15 +217,6 @@ header {
   border-radius: 25px;
 }
 
-.section5 {
-  width: 100%;
-  height: 80vh;
-  background-image: url("./Assets/Backgroud-Images/Maps12345\ 2-01.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @media only screen and (max-width: 850px) {
   .mainHeading {
     font-size: 2.5rem;
@@ -339,14 +330,14 @@ header {
   min-height: 50px;
   line-height: 1.2rem;
 }
-.profileLastBanner {
+/* .profileLastBanner {
   width: 100%;
   height: 88vh;
   background-image: url("./Assets/Profile\ page\ icons\ and\ footer\ image/Maps12345\ 5-01.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 /* ///// Profile Page Icons and Footer END ///// */
 
 /* ///// FOOTER ///// */
@@ -523,14 +514,14 @@ footer {
 
 /* ///// Support Us ///// */
 
-.supportUsTopPage {
+/* .supportUsTopPage {
   width: 100%;
   height: 125vh;
   background-image: url(./Assets/Support-us/Maps12345\ 9-13.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .supportUsBody {
   padding: 30px;
@@ -669,15 +660,15 @@ footer {
 
 /* ///// Help Guides ///// */
 
-.helpGuidesTopPage {
+/* .helpGuidesTopPage {
   width: 100%;
   height: 100vh;
-  background-image: url("./Assets/Help-guides/Maps12345\ 6-01.png");
+  background-image: url("");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 20px;
-}
+} */
 
 .hrDiv {
   display: flex;
@@ -788,11 +779,12 @@ footer {
 }
 
 .ourMissionBgImg {
-  height: 95vh;
+  /* height: 95vh;
   background-image: url("./Assets/Our-Mission/Maps12345\ 4-01.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -819,15 +811,7 @@ footer {
 
 /* ///// Our Services ///// */
 
-.ourServicesTopPage {
-  height: 95vh;
-  background-image: url("./Assets/Our-Services/Maps12345\ 7-01.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* rest of the element are given the classes 
+/* elements are given the classes 
 from the "help guides" section due to same styling */
 
 /* ///// Our Services END ///// */
@@ -1003,7 +987,7 @@ from the "help guides" section due to same styling */
   display: inline-block;
   margin: 0 15px;
 }
-.aboutUsFooterBanner {
+/* .aboutUsFooterBanner {
   margin: 0;
   padding: 0;
   background-image: url("./Assets/Profile page icons and footer image/Maps12345 5-01.png");
@@ -1015,7 +999,7 @@ from the "help guides" section due to same styling */
 .aboutUsFooterBanner img {
   width: 100%;
   margin: 0;
-}
+} */
 /* ///// Media Query For About Us Page ///// */
 @media only screen and (max-width: 900px) {
   .aboutUsContainer {
@@ -1384,6 +1368,7 @@ from the "help guides" section due to same styling */
 }
 .profileSection2MainDiv > div > p {
   color: #3a6e83;
+  font-size: 14px;
 }
 
 .profileSidesContainer {
@@ -1397,11 +1382,14 @@ from the "help guides" section due to same styling */
 }
 
 .profileSidesContainer h3 {
-  font-size: 26px;
+  font-size: 24px;
   padding-left: 7px;
   margin-bottom: 20px;
+  color: #5c8795;
 }
-
+.profileHalfSide1 h3 {
+  font-size: 22px;
+}
 .profileHalfSide1 td {
   color: #9ba7b3;
   font-size: 16px;
@@ -1413,6 +1401,7 @@ from the "help guides" section due to same styling */
   margin: 10px 0px 50px;
   color: #9ba7b3;
   font-weight: lighter;
+  font-size: 15px;
 }
 
 .profileHalfSide1 i {
@@ -1483,9 +1472,6 @@ from the "help guides" section due to same styling */
   height: 100%;
 }
 
-.profileLastBanner {
-  background-image: url("./Assets/Profile\ page\ icons\ and\ footer\ image/Maps12345\ 5-01.png");
-}
 
 /* ///// Sign Up Form & Log In Form ///// */
 
@@ -1508,7 +1494,7 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 .loginFormBanner {
   min-height: 100vh;
@@ -1523,20 +1509,20 @@ fieldset {
 fieldset legend {
   margin: 0 auto !important;
   border-radius: 15px;
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: bold;
   color: #6b8927;
   text-decoration: underline;
   background-color: white;
-  padding: 5px 25px;
+  padding: 8px 35px;
   box-shadow: 3px 3px 3px grey;
 }
 
 fieldset form label {
   display: block;
-  font-size: 1.3rem;
+  color: #5c8795;
   font-weight: bold;
-  color: black;
+  font-size: 18px;
   text-align: left;
   width: 90%;
   margin: 0 auto 10px;
@@ -1546,13 +1532,15 @@ fieldset form input,
 .selectBox,
 fieldset form textarea {
   width: 90%;
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 16px;
-  border: none;
-  background-color: rgb(238, 235, 235);
+  border-radius: 8px;
+  outline: none;
+  padding: 6px 12px;
+  border: 3px solid #cfe9f3;
+  background-color: #f1fbff;
+  color: #7c9ad0;
+  font-size: 14px;
   margin-left: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   outline: none;
 }
 input::-webkit-outer-spin-button,
@@ -1562,8 +1550,8 @@ input::-webkit-inner-spin-button {
 }
 
 fieldset form button {
-  width: 50%;
-  margin: 20px auto;
+  width: 30%;
+  margin: 10px auto;
   display: block;
   padding: 8px;
   border: none;
@@ -1575,25 +1563,20 @@ fieldset form button {
   color: white;
   cursor: pointer;
   transition: all 0.6s ease;
-  box-shadow: 5px 5px 10px grey;
 }
 
 fieldset > p {
   color: black;
   width: 100%;
   text-align: center;
+  font-size: 14px;
 }
 fieldset > p a {
-  font-weight: bold;
-  color: royalblue;
+  font-size: 14px;
+  color: #7c9ad0;
 }
-
 fieldset form button:hover {
-  width: 80%;
-}
-
-fieldset form input::placeholder {
-  color: #333;
+  width: 50%;
 }
 
 /* ///// Contact Us ///// */
@@ -1677,6 +1660,10 @@ fieldset form input::placeholder {
   position: relative;
   height: 100px;
 }
+.inboxHeader h1 {
+  font-size: 22px;
+  margin: 0;
+}
 .userListInboxHeader {
   display: flex;
   align-items: center;
@@ -1695,6 +1682,7 @@ fieldset form input::placeholder {
 .userListInboxHeader h1 {
   font-weight: normal;
   margin-right: 10px;
+  font-size: 18px ;
 }
 .userListInboxHeader i {
   padding-left: 10px;
@@ -1770,7 +1758,7 @@ fieldset form input::placeholder {
 }
 
 .inboxFooter {
-  width: 75%;
+  width: 70%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1808,7 +1796,7 @@ fieldset form input::placeholder {
 }
 
 .userListSection {
-  width: 25%;
+  width: 30%;
   height: 100vh;
   box-shadow: 0px 5px 5px grey;
 }
@@ -2159,7 +2147,7 @@ fieldset form input::placeholder {
 }
 .dpSUP img {
   border-radius: 50%;
-  width: 200px;
+  width: 160px;
   background-color: white;
   margin: 10px;
 }
@@ -2169,7 +2157,7 @@ fieldset form input::placeholder {
 }
 .dpSUP section h3 {
   color: #5c8795;
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
   word-wrap: break-word;
@@ -2186,17 +2174,19 @@ fieldset form input::placeholder {
 .signUpProfileMainSection label {
   color: #5c8795;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 18px;
 }
 .signUpProfileMainSection > section > div > input,
-.signUpProfileMainSection select {
+.signUpProfileMainSection select ,
+.signUpProfileMainSection textarea{
   width: 100%;
   border-radius: 8px;
   outline: none;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border: 3px solid #cfe9f3;
   background-color: #f1fbff;
   color: #7c9ad0;
+  font-size: 14px;
 }
 .namesSUP div {
   width: 46%;
@@ -2218,14 +2208,8 @@ fieldset form input::placeholder {
 .dobSUP label {
   width: 100%;
 }
-.dobDiv1 {
-  width: 46%;
-}
-.dobDiv2 {
-  width: 15%;
-}
-.dobDiv3 {
-  width: 28%;
+.dobSUP div {
+  width: 25%;
 }
 .genderSUP {
   display: flex;
@@ -2277,15 +2261,17 @@ fieldset form input::placeholder {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .areYouOptions div img {
-  width: 70px;
+  width: 60px;
   cursor: pointer;
 }
 .areYouOptions label {
   display: flex;
   align-items: center;
   font-weight: normal;
+  margin: 0;
   font-size: 16px;
 }
 .areYouOptions span {
@@ -2294,7 +2280,19 @@ fieldset form input::placeholder {
 }
 .quesAnsBox label {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17px;
+}
+.quesAnsBox small {
+  color: #3a6e83;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: cursive;
+}
+.signUpProfileShow {
+  display: inline-block;
+}
+.signUpProfileHidden {
+  display: none;
 }
 .btnRegister {
   padding: 6px;
