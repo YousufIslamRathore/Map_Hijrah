@@ -1067,7 +1067,9 @@ from the "help guides" section due to same styling */
   box-shadow: 5px 0px 15px 0px grey;
   padding: 20px;
 }
-
+.searchIconMap {
+  display: none;
+}
 .inputDiv {
   border: 1px solid #6a8fd3;
   background-color: #e2f3fa;
@@ -1178,28 +1180,37 @@ from the "help guides" section due to same styling */
   justify-content: flex-start;
   align-items: flex-start;
   line-height: 1rem;
+  font-size: 14px;
   padding: 10px 5px;
 }
 .firstTd {
-  width: 150px;
+  width: 100px;
 }
 
 .mapContentContainer h2 {
+  width: 100%;
   padding-left: 8px;
   margin: 10px 0px 20px;
-  font-size: 22px;
+  font-size: 20px;
   color: #504e4f;
 }
+.mapInterestContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .mapInterestContainer > div {
+  width: 50%;
   padding-left: 8px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
 .mapInterestContainer > div > div {
-  width: 70px;
-  margin-right: 20px;
+  width: 60px;
 }
 .mapInterestContainer i {
   font-size: 50px;
@@ -1237,28 +1248,74 @@ from the "help guides" section due to same styling */
   width: 100%;
   height: 100%;
 }
-
 .colorNavigator {
   position: absolute;
   right: 20px;
   bottom: 20px;
   background-color: whitesmoke;
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 350px;
-  height: 120px;
+  width: 300px;
+  height: 80px;
 }
 .colorNavigator div {
   width: 50%;
+  text-align: left;
 }
 .colorNavigator i {
-  font-size: 25px;
+  font-size: 20px;
 }
-
+.osmMapBody h1 {
+  display: none;
+}
+@media only screen and (max-width: 1050px){
+  .mapContentContainer {
+    display: none;
+    height: 83vh;
+  }
+  .mapIconDiv div i {
+    font-size: 30px;
+  }
+  .mapContentContainerShow {
+    display: block;
+    z-index: -1;
+  }
+  .inputDiv {
+    display: none;
+  }
+  .searchIconMap {
+    display: inline-block;
+  }
+  .osmMapBody {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 83vh;
+  }
+  .osmMapBody h1 {
+    display: block;
+    padding: 20px 8px;
+    background-color: whitesmoke;
+    color: #3a6e83;
+    box-shadow: 3px 3px 5px grey;
+    cursor: pointer;
+    margin: 0px 5px 0px 0px;
+  }
+  .osmMapBody iframe {
+    width: 95%;
+    border-radius: 20px;
+    margin-right: 8px;
+  }
+  .colorNavigator {
+    right: 50px;
+  }
+}
 /* ///// Map END ///// */
 
 /* ///// Responsive Nav Bar ///// */
@@ -1344,10 +1401,11 @@ from the "help guides" section due to same styling */
   margin: 0;
   margin-top: 10px;
   padding-top: 10px;
+  color: #5c8795;
 }
 .profileContentHead p {
   margin-bottom: 10px;
-  color: #504e4f;
+  color: #5c8795;
   font-size: small;
 }
 .profileSection2MainDiv {
@@ -1361,10 +1419,13 @@ from the "help guides" section due to same styling */
   width: 25%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   padding-left: 50px;
 }
 .profileSection2MainDiv > div > div {
   margin-right: 10px;
+  width: 80px;
 }
 .profileSection2MainDiv > div > p {
   color: #3a6e83;
@@ -1375,6 +1436,7 @@ from the "help guides" section due to same styling */
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .profileHalfSide1 {
@@ -1470,6 +1532,18 @@ from the "help guides" section due to same styling */
 
 .mapIframeDiv iframe {
   height: 100%;
+}
+
+@media only screen and (max-width : 1070px) {
+  .profileSection2MainDiv > div {
+    width: 50%;
+  }
+  .profileHalfSide1 {
+    width: 100%;
+  }
+  .profileHalfSide2 {
+    width: 100%;
+  }
 }
 
 
@@ -1585,7 +1659,6 @@ fieldset form button:hover {
 }
 
 .contactUsBanner fieldset {
-  /* background-color: white; */
   padding-top: 25px;
   margin-bottom: 30px;
 }
@@ -1610,8 +1683,8 @@ fieldset form button:hover {
   min-height: 150px;
   max-width: 295px;
   position: absolute;
-  top: 20%;
-  bottom: 80%;
+  top: 15%;
+  bottom: 85%;
   left: 75%;
 }
 .contactUsAdminSection h3 {
@@ -1642,7 +1715,8 @@ fieldset form button:hover {
 /* ///// Inbox Page ///// */
 
 .inboxBody {
-  min-height: 100vh;
+  margin: 5px;
+  max-height: 98vh;
   position: relative;
   background-color: whitesmoke;
   display: flex;
@@ -1658,7 +1732,7 @@ fieldset form button:hover {
   background-color: white;
   top: 0;
   position: relative;
-  height: 100px;
+  height: 90px;
 }
 .inboxHeader h1 {
   font-size: 22px;
@@ -1690,7 +1764,7 @@ fieldset form button:hover {
 .userListContainer {
   background-color: #ffffff;
   overflow-y: scroll;
-  height: 86vh;
+  height: 84vh;
 }
 .userListContainer > div {
   border-bottom: 1px solid #333;
@@ -1758,21 +1832,31 @@ fieldset form button:hover {
 }
 
 .inboxFooter {
-  width: 70%;
+  width:70%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10px;
   border-top: 1px solid #c7c1c1;
   box-shadow: -2px 0px 5px #c7c1c1;
   background-color: white;
 }
 
-.inboxFooter div {
+.inboxFooter > div {
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
 }
-
+.inboxFooter > div > div {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inboxFooter > div > div > i {
+  width: 100%;
+  font-size: 25px;
+  color: black;
+}
 .inboxFooter input {
   width: 100%;
   outline: none;
@@ -1797,7 +1881,7 @@ fieldset form button:hover {
 
 .userListSection {
   width: 30%;
-  height: 100vh;
+  height: 97vh;
   box-shadow: 0px 5px 5px grey;
 }
 
@@ -1807,13 +1891,13 @@ fieldset form button:hover {
 }
 .inboxMainMiddleSection {
   overflow-y: scroll;
-  height: 75vh;
+  height: 73vh;
 }
 .inboxBothSections {
   display: flex;
   align-items: flex-start;
   padding: 5px 15px;
-  margin: 25px 0px;
+  margin: 25px 0px 25px 15px;
 }
 .inboxBothSections > div {
   margin: 0px 15px 0px 0px;
@@ -1827,9 +1911,11 @@ fieldset form button:hover {
 }
 .userMessageContainer {
   background-color: lightgreen;
+  color: #3a6e83;
 }
 .botMessageContainer {
   background-color: #c7c1c1;
+  color: #3a6e83;
 }
 .messageContainer small {
   display: block;

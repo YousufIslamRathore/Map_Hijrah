@@ -1,7 +1,8 @@
+var mapContent = document.getElementById("mapContent")
+console.log(mapContent)
+
 var MenuItems = document.getElementById("MenuItems");
-
 MenuItems.style.maxHeight = "0px";
-
 function menutoggle() {
     if (MenuItems.style.maxHeight == "0px") {
         MenuItems.style.maxHeight = "270px";
@@ -99,3 +100,13 @@ function inputToTextArea(e) {
     }
 }
 
+function mapContentSlider(e) {
+    if (e.innerHTML == "<") {
+        mapContent.className = "mapContentContainer"
+        e.innerHTML = ">"
+    }
+    else if (e.innerHTML == ">") {
+        mapContent.className += "mapContentContainerShow"
+        e.innerHTML = "<"
+    }
+}
