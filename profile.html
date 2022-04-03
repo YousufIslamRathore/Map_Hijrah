@@ -22,10 +22,18 @@
     <!-- ///// Font Awesome CDN ///// -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- ///// BootStrap CSS /////  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+    <!-- ///// Recaptcha ///// -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
-
 
 
     <!-- ///// Header START ///// -->
@@ -33,21 +41,36 @@
     <header>
         <section class="navbar">
             <div class="logo">
-                <img src="./Assets/Main-Logo/MMF-white-logo2.png"  onclick="logoDirector()">
+                <img src="./Assets/Main-Logo/MMF-white-logo2.png" onclick="logoDirector()">
             </div>
             <div class="navlinks">
                 <ul id="MenuItems">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Guides</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" id="homeLink">Profile</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="ourService.html">Our Services</a>
+                            <a class="dropdown-item" href="helpGuides.html">Help Guides</a>
+                            <a class="dropdown-item" href="supportUs.html">Support Us</a>
+                            <a class="dropdown-item" href="ourMission.html">Our Mission</a>
+                        </div>
+                    </li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="map.html">The Map</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#signUpModal" class="navBtn"
+                            id="signupLink">Sign Up</a></li>
+                    <li><a href="loginForm.html" class="navBtn" id="loginLink">Log In</a></li>
                 </ul>
                 <img src="./Assets/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </section>
     </header>
     <!-- ///// Header END ///// -->
+
 
     <!-- ///// Main Body START ///// -->
 
@@ -75,7 +98,7 @@
         </div>
 
         <section>
-            <h1 style="text-align: center; margin: 30px 0 0; color: #5c8795;">Interests & About Me</h1>
+            <h1 class="interestsHeadingInProfile">Interests & About Me</h1>
             <div class="profileSection2MainDiv">
                 <div>
                     <div><img src="./Assets/Profile page icons and footer image/Maps12345 5-05.png" style="width: 100%;"></div>
@@ -283,6 +306,67 @@
             </div>
         </section>
     </footer>
+
+    <!-- ///// SIGN IN POP UP MODAL ///// -->
+
+    <section class="modal fade" id="signUpModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content forBorderRadius">
+                <section class="modal-body wholeModal">
+                    <section class="modalFirstSection">
+                        <div><img src="./Assets/Main-Logo/MMF-white-logo2.png" /></div>
+                        <h1>Already <br /> a member?</h1>
+                        <small>Please keep connected with us</small>
+                        <button>Log In</button>
+                    </section>
+                    <section class="signUpProfileMainSection modalSignUpSection">
+                        <h1>Sign up for free</h1>
+                        <section class="resSUP">
+                            <div>
+                                <label for="username">
+                                    Username
+                                </label> <br />
+                                <input type="text" name="username" id="username">
+                            </div>
+                        </section>
+                        <section class="resSUP">
+                            <div>
+                                <label for="email">
+                                    Email
+                                </label> <br />
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </section>
+                        <section class="resSUP">
+                            <div>
+                                <label for="password">
+                                    Password
+                                </label> <br />
+                                <input type="password" name="password" id="password">
+                                <i class="fas fa-solid fa-eye" onclick="showPassword(this)"></i>
+                            </div>
+                        </section>
+                        <section class="resSUP">
+                            <div>
+                                <label for="confirmPassword">
+                                    Confirm Password
+                                </label> <br />
+                                <input type="password" name="confirmPassword" id="confirmPassword">
+                                <i class="fas fa-solid fa-eye" onclick="showPassword(this)"></i>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="g-recaptcha recaptchaDiv"
+                                data-sitekey="6LfX-qEeAAAAAAm3VkldTx_fI_9T1AiVuWVDJ5sl"></div>
+                        </section>
+
+                        <button><a href="./SignUpProfile.html"> Sign Up </a></button>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
 
 
 </body>

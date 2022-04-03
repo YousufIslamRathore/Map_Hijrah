@@ -525,6 +525,7 @@ footer {
 
 .supportUsBody {
   padding: 30px;
+  padding-bottom: 0;
 }
 
 .titleDiv {
@@ -557,6 +558,9 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+.lastSupportUsContent {
+  margin: 0 auto !important;
 }
 
 .supportUsContent div {
@@ -606,7 +610,7 @@ footer {
   box-shadow: 0px 0px 5px 2px #bcd53b;
 }
 .titleDiv2 {
-  margin-top: 30px;
+  margin-top: 150px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -685,12 +689,12 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: -25px;
 }
 
 .helpGuidesContent {
   width: 30%;
-  min-height: 400px;
+  min-height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1185,6 +1189,7 @@ from the "help guides" section due to same styling */
 }
 .firstTd {
   width: 100px;
+  font-weight: bold;
 }
 
 .mapContentContainer h2 {
@@ -1272,7 +1277,7 @@ from the "help guides" section due to same styling */
 .osmMapBody h1 {
   display: none;
 }
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1050px) {
   .mapContentContainer {
     display: none;
     height: 83vh;
@@ -1401,12 +1406,20 @@ from the "help guides" section due to same styling */
   margin: 0;
   margin-top: 10px;
   padding-top: 10px;
+  font-weight: bold;
   color: #5c8795;
 }
 .profileContentHead p {
   margin-bottom: 10px;
   color: #5c8795;
   font-size: small;
+}
+.interestsHeadingInProfile {
+  text-align: center;
+  margin: 30px 0 0;
+  color: #5c8795;
+  font-weight: bold;
+  font-size: 19px;
 }
 .profileSection2MainDiv {
   display: flex;
@@ -1448,6 +1461,7 @@ from the "help guides" section due to same styling */
   padding-left: 7px;
   margin-bottom: 20px;
   color: #5c8795;
+  font-weight: bold;
 }
 .profileHalfSide1 h3 {
   font-size: 22px;
@@ -1534,7 +1548,7 @@ from the "help guides" section due to same styling */
   height: 100%;
 }
 
-@media only screen and (max-width : 1070px) {
+@media only screen and (max-width: 1070px) {
   .profileSection2MainDiv > div {
     width: 50%;
   }
@@ -1545,7 +1559,6 @@ from the "help guides" section due to same styling */
     width: 100%;
   }
 }
-
 
 /* ///// Sign Up Form & Log In Form ///// */
 
@@ -1695,7 +1708,6 @@ fieldset form button:hover {
 }
 .contactUsAdminSection > div > p {
   font-size: 13px;
-  
 }
 @media only screen and (max-width: 500px) {
   .formContainer fieldset {
@@ -1756,7 +1768,7 @@ fieldset form button:hover {
 .userListInboxHeader h1 {
   font-weight: normal;
   margin-right: 10px;
-  font-size: 18px ;
+  font-size: 18px;
 }
 .userListInboxHeader i {
   padding-left: 10px;
@@ -1832,7 +1844,7 @@ fieldset form button:hover {
 }
 
 .inboxFooter {
-  width:70%;
+  width: 70%;
   position: absolute;
   bottom: 0;
   right: 10px;
@@ -2263,8 +2275,8 @@ fieldset form button:hover {
   font-size: 18px;
 }
 .signUpProfileMainSection > section > div > input,
-.signUpProfileMainSection select ,
-.signUpProfileMainSection textarea{
+.signUpProfileMainSection select,
+.signUpProfileMainSection textarea {
   width: 100%;
   border-radius: 8px;
   outline: none;
