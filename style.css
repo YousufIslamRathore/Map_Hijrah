@@ -353,7 +353,6 @@ footer {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-
 .foot1 {
   width: 50%;
   display: flex;
@@ -366,12 +365,10 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
 .footer1 {
   display: flex;
   flex-direction: column;
 }
-
 .footer1 > div {
   display: flex;
   align-items: center;
@@ -386,50 +383,42 @@ footer {
   background-color: rgba(249, 160, 156, 0.3);
   border-radius: 25px;
 }
-
 .foot1 h1,
 .foot1 i,
 .foot1 p {
   color: #f9a09c;
 }
-
 .foot1 h1 {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
 }
-
 .foot1 p {
   margin: 3px 15px;
   font-size: 13px;
   line-height: 1rem;
   width: 100%;
 }
-
 .foot1 i {
   font-size: 20px;
   width: 100%;
 }
-
 .foot2 h2,
 .foot2 p,
 .foot2 i {
   color: #f9a09c;
 }
-
 .foot2 h2 {
   font-weight: normal;
   font-size: 22px;
   margin-bottom: 30px;
 }
-
 .foot2 p {
   font-size: 13px;
   max-width: 400px;
   line-height: 1rem;
   margin-bottom: 30px;
 }
-
 .icons {
   display: flex;
 }
@@ -444,14 +433,12 @@ footer {
   font-size: 1.7rem;
   width: 100%;
 }
-
 .secLastDiv {
   display: flex;
   justify-content: center;
   align-items: center !important;
   padding-bottom: 40px;
 }
-
 .secLastDiv p {
   color: #f9a09c;
   padding-right: 30px;
@@ -460,11 +447,9 @@ footer {
   text-align: right;
   margin: 0;
 }
-
 .secLastDiv div {
   width: 50%;
 }
-
 .secLastDiv button {
   border: none;
   background-color: #87c930;
@@ -477,39 +462,53 @@ footer {
 .secLastDiv button:hover {
   box-shadow: 0px 0px 10px 2px #bcd53b;
 }
-@media only screen and (max-width: 768px) {
-  .foot1,
-  .foot2 {
-    width: 100%;
-  }
-  .foot2 {
-    margin-top: 30px;
-    align-items: center;
-  }
-  .foot2 h2 {
-    margin-bottom: 15px;
-  }
-  .foot2 p {
-    text-align: center;
-    margin: 20px;
-  }
-  .secLastDiv {
-    padding: 40px 0px;
-  }
-}
-
 /* ///// COPYRIGHT ///// */
 .lastDiv {
   background-color: #341a09;
   padding: 20px;
 }
 .lastDiv p {
-  font-size: 13px;
+  font-size: 14px;
   color: #f9a09c;
   font-family: monospace;
   font-weight: lighter;
   text-align: center;
   margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .foot1,
+  .foot2 {
+    width: 100%;
+  }
+  .foot1 h1 {
+    font-size: 22px;
+  }
+  .foot2 {
+    margin-top: 30px;
+    align-items: center;
+  }
+  .foot2 h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .foot2 p {
+    text-align: center;
+    margin: 0 20px 20px;
+  }
+  .secLastDiv {
+    padding: 30px 0px;
+  }
+  .secLastDiv p {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .secLastDiv button {
+    font-size: 14px;
+    padding: 4px 40px;
+  }
+  .lastDiv p {
+    font-size: 12px;
+  }
 }
 
 /* ///// Support Us ///// */
@@ -611,6 +610,7 @@ footer {
 }
 .titleDiv2 {
   margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1588,7 +1588,7 @@ fieldset {
   background-image: url("./Assets/Backgroud-Images/Maps12345\ 8-01.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
 }
 .loginFormBox fieldset {
   background-color: white;
@@ -1601,8 +1601,10 @@ fieldset legend {
   color: #6b8927;
   text-decoration: underline;
   background-color: white;
-  padding: 8px 35px;
+  padding: 8px;
   box-shadow: 3px 3px 3px grey;
+  width: 150px;
+  text-align: center;
 }
 
 fieldset form label {
@@ -1630,6 +1632,12 @@ fieldset form textarea {
   margin-bottom: 15px;
   outline: none;
 }
+.loginFormElement input {
+  margin-left: 35px;
+}
+.loginFormElement label {
+  margin-bottom: 0px !important;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1637,15 +1645,15 @@ input::-webkit-inner-spin-button {
 }
 
 fieldset form button {
-  width: 30%;
+  width: 25%;
   margin: 10px auto;
   display: block;
-  padding: 8px;
+  padding: 6px;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 1rem;
+  font-size: 16px;
   background-color: #bcd53b;
   color: white;
   cursor: pointer;
@@ -1663,19 +1671,42 @@ fieldset > p a {
   color: #7c9ad0;
 }
 fieldset form button:hover {
-  width: 50%;
+  width: 40%;
+}
+@media only screen and (max-width: 730px) {
+  .loginFormElement input {
+    margin-left: 22px;
+  }
+  fieldset legend {
+    font-size: 20px;
+    padding: 6px;
+    margin-bottom: 10px !important;
+  }
+  fieldset form label,
+  .loginFormElement label {
+    font-size: 16px;
+  }
+  fieldset form button, 
+  .loginFormElement button {
+    font-size: 13px;
+  }
+  fieldset > p ,
+  fieldset > p a {
+    font-size: 12px;
+  }
 }
 
 /* ///// Contact Us ///// */
 .contactUsBanner {
-  min-height: 180vh !important;
+  min-height: 130vh !important;
 }
-
+.contactUsMainHeading {
+  font-size: 36px;
+}
 .contactUsBanner fieldset {
-  padding-top: 25px;
+  padding-top: 10px;
   margin-bottom: 30px;
 }
-
 .formContainer {
   display: flex;
   margin: 0 auto;
@@ -1683,44 +1714,51 @@ fieldset form button:hover {
   justify-content: center;
   align-items: center;
 }
+.contactUsFormElement label {
+  margin-bottom: 0;
+}
 .contactUsBanner {
   margin-bottom: 0;
   padding: 0;
-  position: relative;
+  /* position: relative; */
 }
 .contactUsAdminSection {
-  background-color: white;
-  box-shadow: 5px 5px 5px grey;
   padding: 10px 25px;
-  border-radius: 0px 20px 20px 0px;
-  min-height: 150px;
-  max-width: 295px;
-  position: absolute;
-  top: 15%;
-  bottom: 85%;
-  left: 75%;
 }
 .contactUsAdminSection h3 {
   font-size: 14px;
+  font-weight: bold;
+  /* color: #5c8795; */
 }
 .contactUsAdminSection > p {
-  text-align: right;
+  font-style: italic;
+  /* color: #5c8795; */
+  margin-bottom: 5px !important;
 }
 .contactUsAdminSection > div > p {
   font-size: 13px;
+  /* color: #5c8795; */
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 730px) {
+  .contactUsMainHeading {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
   .formContainer fieldset {
-    width: 100%;
+    width: 95%;
     margin: 10px;
   }
   .formContainer label {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
-  .formContainer input,
-  .formContainer textarea {
-    font-size: 1rem;
-    width: 95%;
+  .contactUsFormElement input,
+  .contactUsFormElement textarea {
+    font-size: 14px;
+    width: 97%;
+    margin: 5px;
+  }
+  .contactUsFormElement button {
+    font-size: 16px;
   }
 }
 
