@@ -90,7 +90,7 @@ header {
 .mainBody p {
   margin: auto;
   max-width: 950px;
-  color: #333;
+  color: #3a6e83;
   line-height: 1.3rem;
   padding: 0 20px;
 }
@@ -219,27 +219,37 @@ header {
 
 @media only screen and (max-width: 850px) {
   .mainHeading {
-    font-size: 2.5rem;
+    font-size: 30px;
   }
-
   .mainBody p {
     width: 90%;
-    font-size: 1rem;
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+  .mainBody button {
+    font-size: 14px;
   }
   .sec2div1 {
     width: 90%;
   }
   .sec2div2 {
     width: 90%;
+    margin: 0px 15px;
   }
   .sec2div2 h1 {
     width: 100%;
+    font-size: 22px;
+    line-height: 2rem;
   }
   .sec2div2 p {
     width: 100%;
   }
+  .section3 {
+    padding: 15px 0px 0px;
+  }
   .section3 div {
     width: 90%;
+    margin: 15px 10px;
   }
   .section4 > .sec2div2 {
     padding: 15px;
@@ -249,12 +259,12 @@ header {
     width: 100%;
   }
   .videoSection {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
   }
   .videoSection div {
     width: 100%;
-    height: 250px;
+    height: 180px;
   }
   .videoSection div iframe {
     width: 100%;
@@ -513,15 +523,6 @@ footer {
 
 /* ///// Support Us ///// */
 
-/* .supportUsTopPage {
-  width: 100%;
-  height: 125vh;
-  background-image: url(./Assets/Support-us/Maps12345\ 9-13.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .supportUsBody {
   padding: 30px;
   padding-bottom: 0;
@@ -549,10 +550,9 @@ footer {
   line-height: 1.3em;
   word-wrap: break-word;
 }
-
 .supportUsContent {
   width: 90%;
-  margin: 0 auto 20px;
+  margin: 0 auto 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -612,67 +612,60 @@ footer {
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
-@media only screen and (max-width: 992px) {
-  .supportUsContent {
-    margin-bottom: 30px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .supportUsContent {
-    width: 100%;
-    margin-bottom: 70px;
-  }
-
-  .supportUsContent div {
-    width: 80%;
-  }
-
   .supportUsBody {
     padding: 30px 15px;
   }
-
+  .titleDiv h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
   .titleDiv p {
     width: 85%;
+    font-size: 14px;
   }
-
+  .supportUsContent {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .supportUsContent div {
+    width: 90%;
+  }
   .suDiv2 {
     align-items: center;
     justify-content: center;
   }
-
   .suDiv2 p,
   .suDiv2 h1 {
     text-align: center;
     margin-bottom: 15px;
   }
-
+  .suDiv1 img {
+    width: 50%;
+  }
+  .suDiv2 h1 {
+    font-size: 23px;
+  }
+  .suDiv2 p {
+    font-size: 14px;
+  }
   .suDiv2 button {
     margin-bottom: 10px;
+    font-size: 14px;
   }
 }
-
+@media only screen and (max-width: 520px) {
+  .suDiv1 img {
+    width: 70%;
+  }
+}
 /* ///// Support Us Redirector ///// */
-
-.supportUsRedirector {
+/* .supportUsRedirector {
   padding: 50px 0px;
   box-shadow: 0px -10px 10px 10px grey;
-}
-
-/* ///// Support Us END ///// */
+} */
 
 /* ///// Help Guides ///// */
-
-/* .helpGuidesTopPage {
-  width: 100%;
-  height: 100vh;
-  background-image: url("");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 20px;
-} */
 
 .hrDiv {
   display: flex;
@@ -682,7 +675,6 @@ footer {
 .hrDiv hr {
   width: 80%;
 }
-
 .helpGuidesContainer {
   display: flex;
   justify-content: space-around;
@@ -691,7 +683,6 @@ footer {
   width: 100%;
   margin-bottom: -25px;
 }
-
 .helpGuidesContent {
   width: 30%;
   min-height: 370px;
@@ -702,12 +693,10 @@ footer {
   margin: 10px;
   padding: 10px 0px;
 }
-
 .helpGuidesContent img {
   width: 45%;
   cursor: pointer;
 }
-
 .helpGuidesContent h1 {
   color: #3a6f81;
   font-size: 23px;
@@ -715,23 +704,38 @@ footer {
   text-align: center;
   width: 85%;
 }
-
 .helpGuidesContent p {
   color: #3a6f81;
   font-size: 14px;
   width: 80%;
   text-align: center;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1180px) {
   .helpGuidesContent {
     width: 45%;
   }
+  .helpGuidesContent img {
+    width: 30%;
+  }
 }
-
+@media only screen and (max-width: 768px) {
+  .helpGuidesContent {
+    width: 95%;
+    min-height: 350px;
+  }
+  .helpGuidesContent h1 {
+    font-size: 20px;
+  }
+  .helpGuidesContent p {
+    line-height: 1.2rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .helpGuidesContent {
-    width: 90%;
+    min-height: 320px;
+  }
+  .helpGuidesContent img {
+    width: 40%;
   }
 }
 
@@ -745,23 +749,20 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .ourMissionDiv1 {
   width: 40%;
 }
-
 .ourMissionDiv1 h1 {
   color: #93c01f;
   font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
-
 .ourMissionDiv1 p {
   color: #40687e;
   font-size: 18px;
   margin-bottom: 20px;
 }
-
 .ourMissionDiv1 button {
   background-color: #93c01f;
   color: white;
@@ -771,7 +772,6 @@ footer {
   border: none;
   border-radius: 20px;
 }
-
 .ourMissionDiv2 {
   width: 50%;
   display: flex;
@@ -781,13 +781,7 @@ footer {
 .ourMissionDiv2 img {
   width: 80%;
 }
-
 .ourMissionBgImg {
-  /* height: 95vh;
-  background-image: url("./Assets/Our-Mission/Maps12345\ 4-01.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   margin-top: 60px;
 }
 
@@ -797,12 +791,28 @@ footer {
     align-self: flex-start;
   }
   .ourMissionDiv1 div {
-    padding: 10px 30px 20px 30px;
+    padding: 10px 30px 20px;
     max-width: 700px;
   }
-
   .ourMissionDiv2 {
     width: 70%;
+  }
+  .ourMissionDiv2 img {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ourMissionDiv1 h1 {
+    font-size: 24px;
+  }
+  .ourMissionDiv1 p {
+    font-size: 15px;
+  }
+  .ourMissionDiv1 button {
+    font-size: 16px;
+  }
+  .ourMissionDiv2 img {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -825,7 +835,6 @@ from the "help guides" section due to same styling */
 .aboutUsContainer {
   padding: 30px 0px 30px 30px;
 }
-
 .aboutUsContent {
   display: flex;
   justify-content: flex-end;
@@ -834,11 +843,9 @@ from the "help guides" section due to same styling */
   padding-left: 3%;
   margin-bottom: 100px;
 }
-
 .aboutUsContent div {
   width: 50%;
 }
-
 .aboutUsContent div h1 {
   display: inline-block;
   color: #6b8a27;
@@ -848,31 +855,26 @@ from the "help guides" section due to same styling */
   font-weight: bold;
   border-radius: 0px 0px 5px 5px;
 }
-
 .aboutUsContent div h2 {
   color: #6b8927;
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 25px;
 }
-
 .aboutUsContent div p {
   color: #646263;
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: lighter;
-  line-height: 1.5rem;
 }
 .readMore {
   color: #7c9ad0 !important;
   font-weight: bold !important;
   cursor: pointer;
 }
-
 .aboutUsContent img {
   width: 80%;
 }
-
 .ourTeamContainer {
   background: linear-gradient(to bottom, #d4ebf5, #ffffff);
   padding-top: 50px;
@@ -906,17 +908,17 @@ from the "help guides" section due to same styling */
 
 .ourTeamDiv {
   width: 300px;
+  min-height: 400px;
   background-color: white;
   text-align: center;
   box-shadow: 0px 0px 15px 0px #7c9ad0;
   border-radius: 20px;
-  position: relative;
-  min-height: 400px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin: 20px;
+  position: relative;
 }
 
 .ourTeamDiv img {
@@ -960,7 +962,6 @@ from the "help guides" section due to same styling */
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
 .brandsTxt {
   width: 40%;
   display: flex;
@@ -982,32 +983,24 @@ from the "help guides" section due to same styling */
   font-size: 1.3rem;
   color: #646263;
 }
-
 .brandsIcons {
   width: 60%;
   padding: 15px;
 }
-.brandsIcons img {
+.brandsIcons h2 {
+  margin-right: 30px;
+  color: #6b8a27;
+  /* font-size: 28px; */
+}
+/* .brandsIcons img {
   display: inline-block;
   margin: 0 15px;
-}
-/* .aboutUsFooterBanner {
-  margin: 0;
-  padding: 0;
-  background-image: url("./Assets/Profile page icons and footer image/Maps12345 5-01.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 80vh;
-}
-.aboutUsFooterBanner img {
-  width: 100%;
-  margin: 0;
 } */
+
 /* ///// Media Query For About Us Page ///// */
 @media only screen and (max-width: 900px) {
   .aboutUsContainer {
-    padding: 10px 0px 30px 0px;
+    padding: 10px 0px 30px;
   }
   .aboutUsContent div h1 {
     padding-top: 50px;
@@ -1041,7 +1034,7 @@ from the "help guides" section due to same styling */
   }
   .brandsTxt h1,
   .brandsTxt p {
-    width: auto;
+    width: 100%;
   }
   .brandsTxt h1 {
     font-size: 2.3rem;
@@ -1053,14 +1046,49 @@ from the "help guides" section due to same styling */
     justify-content: center;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 730px) {
   .aboutUsContent {
     padding-left: 0;
   }
-
-  .brandsIcons img {
-    width: 60%;
+  .aboutUsContent div h1 {
+    padding-top: 40px;
+    font-size: 32px;
   }
+  .aboutUsContent div h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .aboutUsContent div p {
+    font-size: 14px;
+  }
+  .readMore {
+    font-size: 12px;
+  }
+  .ourTeamContainer h2 {
+    font-size: 18px;
+  }
+  .ourTeamDiv {
+    min-height: 350px;
+    margin-bottom: 50px;
+  }
+  .brandsTxt h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .brandsTxt p {
+    font-size: 18px;
+  }
+  .brandsIcons {
+    padding: 0;
+  }
+  .brandsIcons h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  /* .brandsIcons img {
+    width: 60%;
+  } */
 }
 
 /* ///// About Us End /////  */
@@ -1389,9 +1417,9 @@ from the "help guides" section due to same styling */
   align-items: center;
   box-shadow: none;
   position: absolute;
+  position: relative;
   top: -30px;
   max-height: 200px;
-  position: relative;
 }
 .profileContentHead section {
   display: flex;
@@ -1414,6 +1442,17 @@ from the "help guides" section due to same styling */
   color: #5c8795;
   font-size: small;
 }
+.regionIconSpan {
+  color: #4b83fe;
+  padding-left: 10px;
+}
+.memberElement {
+  margin: 0 !important;
+  margin-top: 5px !important;
+}
+.profileEllipseIcon {
+  font-size: 30px !important;
+}
 .interestsHeadingInProfile {
   text-align: center;
   margin: 30px 0 0;
@@ -1433,7 +1472,7 @@ from the "help guides" section due to same styling */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding-left: 50px;
 }
 .profileSection2MainDiv > div > div {
@@ -1443,19 +1482,17 @@ from the "help guides" section due to same styling */
 .profileSection2MainDiv > div > p {
   color: #3a6e83;
   font-size: 14px;
+  margin: 0;
 }
-
 .profileSidesContainer {
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .profileHalfSide1 {
   width: 42%;
 }
-
 .profileSidesContainer h3 {
   font-size: 24px;
   padding-left: 7px;
@@ -1469,33 +1506,27 @@ from the "help guides" section due to same styling */
 .profileHalfSide1 td {
   color: #9ba7b3;
   font-size: 16px;
-  line-height: 1.3rem;
   font-weight: lighter;
 }
-
 .profileHalfSide1 p {
   margin: 10px 0px 50px;
   color: #9ba7b3;
   font-weight: lighter;
   font-size: 15px;
 }
-
 .profileHalfSide1 i {
   font-size: 35px;
   color: #94b42f;
   margin-top: 10px;
 }
-
 .profileHalfSide2 {
   width: 50%;
 }
-
 .profileHalfSide2 section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .profileHalfSide2 section button {
   background-color: #93c01f;
   color: white;
@@ -1504,7 +1535,6 @@ from the "help guides" section due to same styling */
   font-weight: lighter;
   padding: 5px 15px;
 }
-
 .imageDivContainer {
   display: flex;
   justify-content: space-between;
@@ -1522,33 +1552,30 @@ from the "help guides" section due to same styling */
   border-radius: 8px;
   margin: 15px;
 }
-
 .imageDivContainer i {
   font-size: 80px;
   opacity: 0.5;
   color: white;
 }
-
 .halfImageDiv {
   width: 40% !important;
   height: 200px !important;
 }
-
 .profileHalfSide2 div iframe {
   width: 100%;
   box-shadow: 0px 0px 10px 0px grey;
 }
-
 .mapIframeDiv {
   border: 5px solid #93c01f;
   height: 300px;
 }
-
 .mapIframeDiv iframe {
   height: 100%;
 }
-
 @media only screen and (max-width: 1070px) {
+  .profileContentHead section {
+    justify-content: flex-start;
+  }
   .profileSection2MainDiv > div {
     width: 50%;
   }
@@ -1557,6 +1584,86 @@ from the "help guides" section due to same styling */
   }
   .profileHalfSide2 {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .profileCoverThemePic {
+    height: 180px;
+  }
+  .profileCoverThemePic i {
+    font-size: 60px;
+  }
+  .profileContainer {
+    padding: 0px 20px;
+  }
+  .profileContentHead {
+    padding: 0;
+    top: -40px;
+  }
+  .profileImgContainer {
+    width: 110px;
+    margin-right: 10px;
+  }
+  .profileContentHead h1 {
+    font-size: 20px;
+    padding-top: 25px;
+  }
+  .profileContentHead p {
+    margin-bottom: 5px;
+  }
+  .regionIconSpan {
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .memberElement {
+    margin: 0 !important;
+  }
+  .profileEllipseIcon {
+    font-size: 20px !important;
+  }
+  .profileSection2MainDiv > div {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .profileSection2MainDiv > div > div {
+    width: 60px;
+  }
+  .profileSection2MainDiv > div > p {
+    width: 150px;
+  }
+  .profileHalfSide1 h3,
+  .profileHalfSide2 h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+  .profileHalfSide1 td {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+  .profileHalfSide1 .firstTd {
+    width: 80px;
+  }
+  .profileHalfSide1 p {
+    font-size: 13px;
+    margin-bottom: 35px;
+  }
+  .profileHalfSide2 h3 {
+    margin: 0;
+  }
+  .profileHalfSide2 section {
+    margin-bottom: 10px;
+  }
+  .profileHalfSide2 section button {
+    font-size: 13px;
+  }
+  .imageDivContainer div {
+    height: 200px !important;
+    margin: 15px 0;
+  }
+  .halfImageDiv {
+    width: 100% !important;
   }
 }
 
@@ -1686,11 +1793,11 @@ fieldset form button:hover {
   .loginFormElement label {
     font-size: 16px;
   }
-  fieldset form button, 
+  fieldset form button,
   .loginFormElement button {
     font-size: 13px;
   }
-  fieldset > p ,
+  fieldset > p,
   fieldset > p a {
     font-size: 12px;
   }
@@ -2193,6 +2300,9 @@ fieldset form button:hover {
   .subpageTopBody > div {
     width: 80%;
   }
+  .subpageTopBody h1 {
+    font-size: 24px;
+  }
   .subpageContent {
     padding: 0;
   }
@@ -2214,16 +2324,75 @@ fieldset form button:hover {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 730px) {
+  .subpageTopBody > section,
+  .subpageTopBody > div {
+    width: 100%;
+  }
   .subpageTopBody {
-    padding: 20px 20px 80px 20px;
+    padding: 20px 20px 50px 20px;
   }
   .subpageTopBody h1 {
-    font-size: 35px;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .subpageTopBody p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .subpageTopBody section div {
+    justify-content: space-around;
+  }
+  .subpageTopBody div button {
+    font-size: 12px;
+    width: 150px;
+    padding: 6px;
+    margin: 5px 0 5px 0 !important;
+  }
+  .subpageTopBody > div {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .subpageTopBody img {
+    width: 75%;
+  }
+  .subpageTopSection button {
+    font-size: 13px;
+    padding: 5px;
+    width: 130px;
+  }
+  .subpageContentContainer {
+    padding: 20px 25px 20px 42px;
+  }
+  .subpageContent > section {
+    margin-bottom: 10px;
   }
   .subpageContent > div {
     width: 50%;
-    margin: 20px auto 0;
+    margin: 10px auto 0 0;
+  }
+  .subpageContent h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .subpageContent p,
+  .subpageContent span {
+    font-size: 13px;
+  }
+  .subpageContent i {
+    font-size: 12px !important;
+  }
+  /* //// Timeline Bar //// */
+  .timeline::after {
+    width: 4px;
+    top: 52px;
+    bottom: 470px;
+    margin-left: -4px;
+  }
+  .containerTimline::after {
+    width: 20px;
+    height: 20px;
+    left: -32px;
   }
 }
 
@@ -2509,7 +2678,6 @@ fieldset form button:hover {
   border-radius: 15px !important;
   border: none !important;
 }
-
 .wholeModal {
   display: flex;
   min-height: 90vh;
@@ -2533,6 +2701,9 @@ fieldset form button:hover {
   font-size: 30px !important ;
   margin-bottom: 20px;
 }
+.modalHeadingResponsive {
+  display: none;
+}
 .modalFirstSection small {
   display: block;
   color: white;
@@ -2545,7 +2716,7 @@ fieldset form button:hover {
   border: 2px solid white;
   padding: 5px;
   width: 130px;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 .modalSignUpSection {
   width: 70%;
@@ -2581,10 +2752,76 @@ fieldset form button:hover {
 .modalSignUpSection section div i {
   color: #bbe7f7;
   font-size: 20px;
+  cursor: pointer;
 }
 /* //// I'm not a robot //// */
 .recaptchaDiv {
-  border: 3px solid #cfe9f3;
-  border-radius: 12px;
+  border: 2px solid #cfe9f3;
   margin: auto;
+}
+
+@media only screen and (max-width: 730px) {
+  .wholeModal {
+    flex-wrap: wrap;
+  }
+  .modalFirstSection {
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    padding: 15px 30px 15px 30px;
+  }
+  .modalFirstSection div {
+    margin-bottom: 15px;
+  }
+  .modalFirstSection img {
+    width: 30%;
+  }
+  .modalFirstSection h1 {
+    font-size: 22px !important;
+    margin-bottom: 5px !important;
+  }
+  .modalHeadingWeb {
+    display: none;
+  }
+  .modalHeadingResponsive {
+    display: block;
+  }
+  .modalFirstSection small {
+    margin-bottom: 5px;
+  }
+  .modalFirstSection button {
+    width: 100px;
+    font-size: 14px;
+    padding: 3px;
+  }
+  .modalSignUpSection {
+    width: 100%;
+    padding: 0 20px !important;
+  }
+  .modalSignUpSection h1 {
+    font-size: 22px;
+    padding: 10px 0 0 0 !important;
+  }
+  .modalSignUpSection section {
+    margin: 5px 0 0 0;
+  }
+  .modalSignUpSection button {
+    width: 150px;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .modalSignUpSection section div i {
+    font-size: 18px;
+  }
+  .modalSignUpSection label {
+    margin: 0;
+    font-size: 14px;
+  }
+  .modalSignUpSection input {
+    padding: 5px 8px !important;
+    font-size: 13px;
+  }
+  .g-recaptcha {
+    transform:scale(0.60);
+  }
 }
