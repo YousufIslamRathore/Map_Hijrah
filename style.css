@@ -10,7 +10,7 @@ header {
   top: 0;
   background-color: #ffffff;
   padding-bottom: 15px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .homePage {
@@ -46,6 +46,10 @@ header {
   margin: 10px 20px;
   list-style-type: none;
   text-align: center;
+}
+.navlinks li > div > a {
+  z-index: 6;
+  color: #333 !important;
 }
 
 .navlinks a {
@@ -681,7 +685,6 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: -25px;
 }
 .helpGuidesContent {
   width: 30%;
@@ -1691,14 +1694,11 @@ fieldset {
   min-height: 50vh;
 }
 .loginFormBanner {
-  min-height: 100vh;
-  background-image: url("./Assets/Backgroud-Images/Maps12345\ 8-01.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
+  min-height: 60vh;
 }
 .loginFormBox fieldset {
   background-color: white;
+  border: 1px solid #87c930;
 }
 fieldset legend {
   margin: 0 auto !important;
@@ -1709,9 +1709,10 @@ fieldset legend {
   text-decoration: underline;
   background-color: white;
   padding: 8px;
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 3px 3px 5px grey;
   width: 150px;
   text-align: center;
+  border: 1px solid #87c930;
 }
 
 fieldset form label {
@@ -1805,7 +1806,7 @@ fieldset form button:hover {
 
 /* ///// Contact Us ///// */
 .contactUsBanner {
-  min-height: 130vh !important;
+  min-height: 90vh;
 }
 .contactUsMainHeading {
   font-size: 36px;
@@ -1813,6 +1814,7 @@ fieldset form button:hover {
 .contactUsBanner fieldset {
   padding-top: 10px;
   margin-bottom: 30px;
+  border: 1px solid #87c930;
 }
 .formContainer {
   display: flex;
@@ -1869,225 +1871,148 @@ fieldset form button:hover {
   }
 }
 
+
+
 /* ///// Inbox Page ///// */
 
-.inboxBody {
-  margin: 5px;
-  max-height: 98vh;
-  position: relative;
+.inboxMainElement {
   background-color: whitesmoke;
+  padding: 30px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+.inboxMainElement > section {
+  width: 1180px;
+  background-color: white;
+  height: 585px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 5px 5px grey;
+  z-index: 1;
 }
 
-.inboxHeader {
-  padding: 20px;
-  border-bottom: 1px solid #c7c1c1;
-  border-left: 1px solid #c7c1c1;
-  box-shadow: 2px 0px 5px #c7c1c1;
-  background-color: white;
-  top: 0;
-  position: relative;
-  height: 90px;
+/* //// Users List Section //// */
+
+.usersListSection {
+  width: 35%;
+  height: 100%;
+  border-right: 1px solid rgb(203, 203, 203);
 }
-.inboxHeader h1 {
-  font-size: 22px;
+.usersListInboxHeader,
+.chatInboxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  border-bottom: 1px solid rgb(124, 124, 124);
+}
+.usersListInboxHeader h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(81, 81, 81);
   margin: 0;
 }
-.userListInboxHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.usersListInboxHeader > div > i  {
+  color: rgb(81, 81, 81);
+  font-size: 20px;
 }
-.inboxPageSearchIcon {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.inboxPageSearchIcon i {
-  font-size: 25px;
-}
-.userListInboxHeader h1 {
-  font-weight: normal;
-  margin-right: 10px;
-  font-size: 18px;
-}
-.userListInboxHeader i {
-  padding-left: 10px;
-}
-.userListContainer {
-  background-color: #ffffff;
+.usersListMainContainer {
+  width: 100%;
+  height: 515px;
   overflow-y: scroll;
-  height: 84vh;
 }
-.userListContainer > div {
-  border-bottom: 1px solid #333;
+.usersListMainContainer > div {
+  border-bottom: 1px solid rgb(220, 220, 220);
   height: 80px;
   display: flex;
   align-items: center;
   padding: 15px;
   cursor: pointer;
 }
-.userListContainer .inboxProfileImgDiv {
+.usersListMainContainer .inboxProfileImgDiv {
   width: 55px;
   height: 55px;
 }
 .userListNames {
   margin-left: 15px;
 }
-.userListContainer h1 {
+.usersListMainContainer h1 {
   font-size: 16px;
   margin-bottom: 5px;
 }
-.userListContainer p {
-  font-size: 14px;
+.usersListMainContainer p {
+  font-size: 13px;
+  color: #504e4f;
+  margin: 0;
 }
 .userListIcons {
   margin-left: auto;
+  margin-bottom: auto;
   text-align: right;
 }
 .userListIcons p {
   font-size: 12px;
-  margin-right: 2px;
-  margin-bottom: 10px;
+  font-weight: lighter;
+  color: #504e4f;
 }
-.userListIcons span {
-  display: inline-block;
-  width: 40px;
-  text-align: center;
-  border-radius: 15px;
-  font-size: small;
-  background-color: #87c930;
-  color: white;
-}
-.userListIcons div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 75px;
-}
-.activeUserList {
-  background-color: whitesmoke;
-}
-.inboxHeader section {
-  display: flex;
+.userListIcons i {
+  font-weight: lighter;
+  color: #504e4f;
 }
 
-.inboxHeader section > p {
-  margin: 3px 10px;
-  font-size: 14px;
+/* //// Chat Section //// */
+.chatBoxContainer {
+  width: 65%;
+  height: 100%;
 }
-
+.chatInboxHeader > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.chatInboxHeader > section > section {
+  display: flex;
+}
 .greenDot {
-  margin: 5px 10px 15px 5px;
+  margin-right: 10px;
 }
 .greenDot i {
   color: green;
+  font-size: 10px;
 }
-
-.inboxFooter {
-  width: 70%;
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  border-top: 1px solid #c7c1c1;
-  box-shadow: -2px 0px 5px #c7c1c1;
-  background-color: white;
+.greenEllisisInbox i {
+  font-size: 20px;
 }
-
-.inboxFooter > div {
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.inboxFooter > div > div {
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.inboxFooter > div > div > i {
-  width: 100%;
-  font-size: 25px;
-  color: black;
-}
-.inboxFooter input {
-  width: 100%;
-  outline: none;
-  margin-right: 20px;
-  border-radius: 12px;
-  padding: 0px 20px;
-  font-size: 16px;
-}
-
-.inboxFooter button {
-  background-color: #94b42f;
-  color: white;
-  font-size: 18px;
+.chatInboxHeader h1 {
+  font-size: 24px;
   font-weight: bold;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 12px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  box-shadow: 2px 2px 10px grey;
+  margin: 0;
 }
-
-.userListSection {
-  width: 30%;
-  height: 97vh;
-  box-shadow: 0px 5px 5px grey;
-}
-
-.mainChatSection {
-  width: 75%;
-  margin-left: auto;
-}
-.inboxMainMiddleSection {
-  overflow-y: scroll;
-  height: 73vh;
-}
-.inboxBothSections {
-  display: flex;
-  align-items: flex-start;
-  padding: 5px 15px;
-  margin: 25px 0px 25px 15px;
-}
-.inboxBothSections > div {
-  margin: 0px 15px 0px 0px;
-}
-
-.messageContainer {
-  max-width: 80%;
-  padding: 10px;
-  text-align: left;
-  border-radius: 0px 20px 20px 20px;
-}
-.userMessageContainer {
-  background-color: lightgreen;
-  color: #3a6e83;
-}
-.botMessageContainer {
-  background-color: #c7c1c1;
-  color: #3a6e83;
-}
-.messageContainer small {
-  display: block;
-  text-align: right;
-  color: #333;
+.chatInboxHeader p {
   font-size: 12px;
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 8px;
 }
-.messageContainer div {
-  margin: 10px 0px;
+.chatMessagesContainer {
+  width: 100%;
+  height: 460px;
+  overflow-y: scroll;
 }
-.messageContainer h3 {
-  color: #333;
-  font-size: 18px;
+.chatMessagesContainer > div {
+  height: 5px;
+  background-color: #ffffff;
+  position: sticky;
 }
-
+.chatMessagesContainer > div.chatStart {
+  top: 0;
+}
+.chatMessagesContainer > div.chatEnd {
+  bottom: 0;
+}
 .inboxProfileImgDiv {
   width: 40px;
   height: 40px;
@@ -2097,18 +2022,210 @@ fieldset form button:hover {
   justify-content: center;
   align-items: center;
 }
-
 .userProfileImg {
-  background-color: #333;
+  background-color: rgb(100, 100, 100);
 }
 .userProfileImg i {
   color: white;
   border-radius: 50%;
 }
-
 .botProfileImg {
   background-color: white;
 }
+.inboxBothSections {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 8px;
+  margin: 10px 0 15px 0;
+}
+.inboxBothSections > div {
+  margin: 0px 8px 0px 0px;
+}
+.chatMessageContent {
+  width: 75%;
+  border-radius: 0px 15px 15px 15px;
+  padding: 5px 8px;
+
+}
+.userMessageContainer {
+  background-color: #87c930;
+}
+.botMessageContainer {
+  background-color: #c7c1c1;
+}
+.chatMessageContent h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+.chatMessageContent p {
+  font-size: 13px;
+  line-height: 1.1rem;
+  margin-bottom: 10px;
+}
+.chatMessageContent small {
+  display: block;
+  text-align: right;
+  color: #646263;
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+/* // Chat Input Field Section // */
+.chatBoxContainer > section {
+  border-top: 1px solid rgb(203, 203, 203);
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.chatBoxContainer > section > section {
+  display: flex;
+}
+.chatBoxContainer > section > section > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.chatBoxContainer > section > section > div > img {
+  width: 100%;
+}
+.chatBoxContainer > section > section > div > img.inboxClipper {
+  width: 75%;
+}
+.inboxInputFieldDiv {
+  width: 100%;
+  margin-right: 10px;
+}
+.inboxInputFieldDiv input {
+  width: 100%;
+  font-size: 14px;
+  color: #3a6e83;
+  border: 1px solid #6f6f6f;
+  border-radius: 8px;
+  padding: 3px 10px;
+  outline: none;
+}
+.inboxButtonDiv button {
+  background-color: #bcd53b;
+  border: none;
+  width: 80px;
+  font-size: 14px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 900px) {
+  .usersListInboxHeader {
+    padding: 0px 10px;
+  }
+  .usersListInboxHeader h1 {
+    font-size: 16px;
+  }
+  .usersListInboxHeader > div > i {
+    font-size: 16px;
+  }
+  .usersListMainContainer > div {
+    padding: 8px;
+    height: 65px;
+  }
+  .usersListMainContainer .inboxProfileImgDiv {
+    width: 45px;
+    height: 45px;
+  }
+  .userListNames {
+    margin-left: 10px;
+  }
+  .usersListMainContainer h1 {
+    font-size: 15px;
+  }
+  .usersListMainContainer p {
+    font-size: 12px;
+  }
+  .userListIcons p {
+    font-size: 11px;
+  }
+  .userListIcons i {
+    font-size: 10px;
+  }
+  .chatInboxHeader {
+    padding: 0px 18px;
+  }
+  .greenDot {
+    margin-right: 5px;
+  }
+  .greenDot i {
+    color: green;
+    font-size: 8px;
+  }
+  .greenEllisisInbox i {
+    font-size: 18px;
+  }
+  .chatInboxHeader h1 {
+    font-size: 20px;
+  }
+  .chatInboxHeader p {
+    font-size: 11px;
+  }
+  .inboxProfileImgDiv {
+    width: 35px;
+    height: 35px;
+  }
+  .inboxBothSections {
+    padding: 5px;
+    margin: 10px 0;
+  }
+  .chatMessageContent {
+    width: 80%;
+  }
+  .chatMessageContent h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .chatMessageContent p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .inboxMainElement {
+    padding: 30px 10px;
+  }
+  .inboxMainElement > section {
+    height: 480px;
+  }
+  .chatMessagesContainer {
+    height: 355px;
+  }
+  .usersListSection {
+    display: none;
+  }
+  .chatBoxContainer {
+    width: 100%;
+  }
+  .inboxProfileImgDiv {
+    width: 40px;
+    height: 40px;
+  }
+  .chatBoxContainer > section {
+    padding: 5px;
+  }
+  .chatBoxContainer > section > section > div {
+    margin-right: 5px;
+  }
+  .inboxInputFieldDiv {
+    margin-right: 5px;
+  }
+  .inboxInputFieldDiv input {
+    padding: 3px 8px;
+  }
+}
+
 
 /* ///// Subpages ///// */
 
