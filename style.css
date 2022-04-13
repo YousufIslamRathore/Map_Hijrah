@@ -243,7 +243,8 @@ header {
   .sec2div2 h1 {
     width: 100%;
     font-size: 22px;
-    line-height: 2rem;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
   }
   .sec2div2 p {
     width: 100%;
@@ -273,6 +274,14 @@ header {
   .videoSection div iframe {
     width: 100%;
     height: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .homePage {
+    background-image: url("./Assets/Backgroud-Images/Maps12345\ 14-01.png");
+  }
+  .mainBody p {
+    display: none;
   }
 }
 
@@ -536,6 +545,7 @@ footer {
   width: 100%;
   padding: 15px 0px;
   margin-bottom: 15px;
+  text-align: center;
 }
 .titleDiv h1 {
   color: #6b8a27;
@@ -553,6 +563,15 @@ footer {
   font-size: 15px;
   line-height: 1.3em;
   word-wrap: break-word;
+  margin-bottom: 10px;
+}
+.titleDiv button {
+  background-color: #93c01f;
+  border: none;
+  width: 150px;
+  color: white;
+  padding: 6px;
+  border-radius: 15px;
 }
 .supportUsContent {
   width: 90%;
@@ -577,7 +596,6 @@ footer {
 .suDiv1 img {
   width: 80%;
 }
-
 .suDiv2 {
   flex-direction: column;
   align-items: flex-start;
@@ -615,6 +633,9 @@ footer {
 .titleDiv2 {
   margin-top: 150px;
   margin-bottom: 50px;
+}
+.titleDiv3 {
+  margin-bottom: 100px;
 }
 @media only screen and (max-width: 768px) {
   .supportUsBody {
@@ -750,10 +771,10 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .ourMissionDiv1 {
-  width: 40%;
+  width: 48%;
 }
 .ourMissionDiv1 h1 {
   color: #93c01f;
@@ -776,7 +797,7 @@ footer {
   border-radius: 20px;
 }
 .ourMissionDiv2 {
-  width: 50%;
+  width: 45%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -799,6 +820,7 @@ footer {
   }
   .ourMissionDiv2 {
     width: 70%;
+    padding-bottom: 15px;
   }
   .ourMissionDiv2 img {
     width: 60%;
@@ -812,7 +834,7 @@ footer {
     font-size: 15px;
   }
   .ourMissionDiv1 button {
-    font-size: 16px;
+    font-size: 14px;
   }
   .ourMissionDiv2 img {
     width: 80%;
@@ -1407,7 +1429,6 @@ from the "help guides" section due to same styling */
   color: white;
   opacity: 0.7;
 }
-
 .profileContainer {
   position: relative;
   padding: 0px 50px;
@@ -1423,6 +1444,7 @@ from the "help guides" section due to same styling */
   position: relative;
   top: -30px;
   max-height: 200px;
+  padding-bottom: 0;  
 }
 .profileContentHead section {
   display: flex;
@@ -1492,6 +1514,7 @@ from the "help guides" section due to same styling */
   margin-top: 30px;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0px 50px;
 }
 .profileHalfSide1 {
   width: 42%;
@@ -1517,6 +1540,9 @@ from the "help guides" section due to same styling */
   font-weight: lighter;
   font-size: 15px;
 }
+.profileHalfSide1 b {
+  font-weight: bold;
+}
 .profileHalfSide1 i {
   font-size: 35px;
   color: #94b42f;
@@ -1530,6 +1556,7 @@ from the "help guides" section due to same styling */
   justify-content: space-between;
   align-items: center;
 }
+.profileHalfSide1 button,
 .profileHalfSide2 section button {
   background-color: #93c01f;
   color: white;
@@ -1537,6 +1564,7 @@ from the "help guides" section due to same styling */
   border-radius: 5px;
   font-weight: lighter;
   padding: 5px 15px;
+  margin-right: 15px;
 }
 .imageDivContainer {
   display: flex;
@@ -1563,6 +1591,33 @@ from the "help guides" section due to same styling */
 .halfImageDiv {
   width: 40% !important;
   height: 200px !important;
+}
+.profilePageSupportUsRedirector {
+  margin: 0px 15px 40px;
+  width: 100%;
+}
+.profilePageSupportUsRedirector > .suDiv1 {
+  width: 30%;
+}
+.profilePageSupportUsRedirector > .suDiv1 > img {
+  width: 100%;
+}
+.profilePageSupportUsRedirector > .suDiv2 {
+  width: 70%;
+}
+.profilePageSupportUsRedirector > .suDiv2 > h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #5c8795;
+}
+.profilePageSupportUsRedirector > .suDiv2 > p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.profilePageSupportUsRedirector > .suDiv2 > button {
+  font-size: 12px;
+  padding: 6px;
+  width: 100px;
 }
 .profileHalfSide2 div iframe {
   width: 100%;
@@ -1599,9 +1654,13 @@ from the "help guides" section due to same styling */
   .profileContainer {
     padding: 0px 20px;
   }
+  .profileSidesContainer {
+    padding: 0 10px;
+  }
   .profileContentHead {
     padding: 0;
     top: -40px;
+    margin-bottom: -60px;
   }
   .profileImgContainer {
     width: 110px;
@@ -1626,14 +1685,17 @@ from the "help guides" section due to same styling */
   }
   .profileSection2MainDiv > div {
     padding: 0;
-    width: 100%;
+    width: 50%;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .profileSection2MainDiv > div > div {
     width: 60px;
   }
   .profileSection2MainDiv > div > p {
-    width: 150px;
+    /* width: 150px; */
+    text-align: center;
   }
   .profileHalfSide1 h3,
   .profileHalfSide2 h3 {
@@ -1815,6 +1877,7 @@ fieldset form button:hover {
   padding-top: 10px;
   margin-bottom: 30px;
   border: 1px solid #87c930;
+  background-color: #faf9f6;
 }
 .formContainer {
   display: flex;
@@ -1829,7 +1892,6 @@ fieldset form button:hover {
 .contactUsBanner {
   margin-bottom: 0;
   padding: 0;
-  /* position: relative; */
 }
 .contactUsAdminSection {
   padding: 10px 25px;
@@ -1837,16 +1899,26 @@ fieldset form button:hover {
 .contactUsAdminSection h3 {
   font-size: 14px;
   font-weight: bold;
-  /* color: #5c8795; */
 }
 .contactUsAdminSection > p {
   font-style: italic;
-  /* color: #5c8795; */
-  margin-bottom: 5px !important;
+  margin-bottom: 0 !important;
 }
-.contactUsAdminSection > div > p {
+/* .contactUsAdminSection > div > p {
   font-size: 13px;
-  /* color: #5c8795; */
+} */
+.contactButton {
+  width: 130px;
+  transition: none;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  padding: 4px;
+  margin: 0;
+}
+.contactButton:hover {
+  width: 25%;
 }
 @media only screen and (max-width: 730px) {
   .contactUsMainHeading {
@@ -1870,8 +1942,6 @@ fieldset form button:hover {
     font-size: 16px;
   }
 }
-
-
 
 /* ///// Inbox Page ///// */
 
@@ -1914,7 +1984,7 @@ fieldset form button:hover {
   color: rgb(81, 81, 81);
   margin: 0;
 }
-.usersListInboxHeader > div > i  {
+.usersListInboxHeader > div > i {
   color: rgb(81, 81, 81);
   font-size: 20px;
 }
@@ -1941,6 +2011,7 @@ fieldset form button:hover {
 .usersListMainContainer h1 {
   font-size: 16px;
   margin-bottom: 5px;
+  color: #7c9ad0;
 }
 .usersListMainContainer p {
   font-size: 13px;
@@ -2045,18 +2116,19 @@ fieldset form button:hover {
   width: 75%;
   border-radius: 0px 15px 15px 15px;
   padding: 5px 8px;
-
 }
 .userMessageContainer {
-  background-color: #87c930;
+  background-color: #f1fbff;
+  border: 3px solid #cfe9f3;
+  color: #7c9ad0;
 }
 .botMessageContainer {
-  background-color: #c7c1c1;
+  background-color: #e3e0e0;
 }
 .chatMessageContent h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
   margin-bottom: 8px;
 }
 .chatMessageContent p {
@@ -2067,7 +2139,7 @@ fieldset form button:hover {
 .chatMessageContent small {
   display: block;
   text-align: right;
-  color: #646263;
+  /* color: #646263; */
   font-size: 10px;
   padding-right: 5px;
 }
@@ -2225,7 +2297,6 @@ fieldset form button:hover {
     padding: 3px 8px;
   }
 }
-
 
 /* ///// Subpages ///// */
 
@@ -2545,7 +2616,7 @@ fieldset form button:hover {
 }
 
 .signUpProfileMainSection {
-  padding: 80px 150px;
+  padding: 50px 200px;
 }
 .signUpProfileMainSection > section {
   display: flex;
@@ -2611,7 +2682,22 @@ fieldset form button:hover {
   font-size: 14px;
 }
 .namesSUP div {
-  width: 46%;
+  width: 50%;
+}
+.namesSUP span,
+.phoneSUP span,
+.resSUP span {
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+}
+.infoIcon {
+  margin-left: 20px;
+  border: 1px solid #3b6c82;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
 }
 .resSUP div {
   width: 100%;
@@ -2625,13 +2711,13 @@ fieldset form button:hover {
   width: 100%;
 }
 .phoneSUP div {
-  width: 46%;
+  width: 50%;
 }
 .dobSUP label {
   width: 100%;
 }
 .dobSUP div {
-  width: 25%;
+  width: 30%;
 }
 .genderSUP {
   display: flex;
@@ -2696,9 +2782,13 @@ fieldset form button:hover {
   margin: 0;
   font-size: 16px;
 }
+.interestIconss label {
+  flex-wrap: wrap;
+}
 .areYouOptions span {
   color: #3a6e83;
   cursor: pointer;
+  text-align: left;
 }
 .quesAnsBox label {
   font-weight: normal;
@@ -2740,6 +2830,9 @@ fieldset form button:hover {
     padding-right: 60px;
     padding-left: 60px;
   }
+  .areYouOptions label {
+    font-size: 14px;
+  }
   .dpSUP section {
     padding: 0;
     padding-left: 20px;
@@ -2775,6 +2868,20 @@ fieldset form button:hover {
   .signUpProfileMainSection {
     padding: 50px 20px 100px 20px;
   }
+  .interestIconss > div {
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    height: 100px;
+  }
+  .interestIconss > div > label {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+  }
+  .interestIconss span {
+    text-align: center;
+  }
   .dpSUP div {
     width: 30%;
   }
@@ -2797,7 +2904,7 @@ fieldset form button:hover {
 }
 .wholeModal {
   display: flex;
-  min-height: 90vh;
+  min-height: 70vh;
   padding: 0 !important;
 }
 .modalFirstSection {
@@ -2837,10 +2944,10 @@ fieldset form button:hover {
 }
 .modalSignUpSection {
   width: 70%;
-  padding: 0px 100px !important;
+  padding: 0px 80px !important;
 }
 .modalSignUpSection h1 {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   width: 100%;
   color: #93c01f;
@@ -2851,11 +2958,14 @@ fieldset form button:hover {
 .modalSignUpSection section {
   margin: 10px 0px;
 }
+.modalSignUpSection label {
+  font-size: 16px;
+}
 .modalSignUpSection button {
   display: block;
-  width: 300px;
+  width: 250px;
   background-color: #93c01f;
-  padding: 8px;
+  padding: 6px;
   border: none;
   border-radius: 10px;
   margin: 0px auto 30px;
@@ -2883,7 +2993,7 @@ fieldset form button:hover {
   }
   .modalFirstSection {
     width: 100%;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
     padding: 15px 30px 15px 30px;
   }
   .modalFirstSection div {
@@ -2939,6 +3049,6 @@ fieldset form button:hover {
     font-size: 13px;
   }
   .g-recaptcha {
-    transform:scale(0.60);
+    transform: scale(0.6);
   }
 }

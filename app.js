@@ -17,18 +17,18 @@ function genderSelection(element, identity) {
     if(identity == 0) {
         element.firstElementChild.style.backgroundColor = "#87c930"
         element.nextElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
-        element.nextElementSibling.nextElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
+        // element.nextElementSibling.nextElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
     }
     else if (identity == 1) {
         element.firstElementChild.style.backgroundColor = "#87c930"
         element.previousElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
-        element.nextElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
+        // element.nextElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
     }
-    else if (identity == 2) {
-        element.firstElementChild.style.backgroundColor = "#87c930"
-        element.previousElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
-        element.previousElementSibling.previousElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
-    }
+    // else if (identity == 2) {
+    //     element.firstElementChild.style.backgroundColor = "#87c930"
+    //     element.previousElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
+    //     element.previousElementSibling.previousElementSibling.firstElementChild.style.backgroundColor = "#c7c1c1"
+    // }
 }
 
 function showPassword(element) {
@@ -85,20 +85,20 @@ function subpage9() {
     window.location.assign("./subpage9.html")
 }
 
-function inputToTextArea(e) {
-    if(e.innerHTML == "Text Box") {
-        e.previousElementSibling.previousElementSibling.className = "signUpProfileHidden"
-        e.previousElementSibling.className = "signUpProfileShow"
-        e.previousElementSibling.value = e.previousElementSibling.previousElementSibling.value
-        e.innerHTML = "Single-Line Field"
-    }
-    else if (e.innerHTML == "Single-Line Field") {
-        e.previousElementSibling.previousElementSibling.className = "signUpProfileShow"
-        e.previousElementSibling.className = "signUpProfileHidden"
-        e.previousElementSibling.previousElementSibling.value = e.previousElementSibling.value
-        e.innerHTML = "Text Box"
-    }
-}
+// function inputToTextArea(e) {
+//     if(e.innerHTML == "Text Box") {
+//         e.previousElementSibling.previousElementSibling.className = "signUpProfileHidden"
+//         e.previousElementSibling.className = "signUpProfileShow"
+//         e.previousElementSibling.value = e.previousElementSibling.previousElementSibling.value
+//         e.innerHTML = "Single-Line Field"
+//     }
+//     else if (e.innerHTML == "Single-Line Field") {
+//         e.previousElementSibling.previousElementSibling.className = "signUpProfileShow"
+//         e.previousElementSibling.className = "signUpProfileHidden"
+//         e.previousElementSibling.previousElementSibling.value = e.previousElementSibling.value
+//         e.innerHTML = "Text Box"
+//     }
+// }
 
 function mapContentSlider(e) {
     if (e.innerHTML == "<") {
