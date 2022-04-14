@@ -1119,7 +1119,9 @@ from the "help guides" section due to same styling */
 /* ///// About Us End /////  */
 
 /* ///// Map ///// */
-
+.thisIsMapBody header {
+  padding-bottom: 10px;
+}
 .mapNavbar {
   box-shadow: 5px 0px 15px 0px grey;
   padding: 20px;
@@ -1248,15 +1250,16 @@ from the "help guides" section due to same styling */
 .mapContentContainer h2 {
   width: 100%;
   padding-left: 8px;
-  margin: 10px 0px 20px;
+  margin: 10px 0px 15px;
   font-size: 20px;
-  color: #504e4f;
+  color: #3b6c82;
 }
 .mapInterestContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .mapInterestContainer > div {
   width: 50%;
@@ -1265,10 +1268,14 @@ from the "help guides" section due to same styling */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .mapInterestContainer > div > div {
-  width: 60px;
+  width: 50px;
+}
+.mapInterestContainer p {
+  font-size: 14px;
+  color: #3b6c82;
 }
 .mapInterestContainer i {
   font-size: 50px;
@@ -1276,7 +1283,6 @@ from the "help guides" section due to same styling */
 .mapInterestContainer input {
   margin-left: 30px;
 }
-
 .mapAboutContainer p {
   color: #7c9ad0;
   padding-left: 8px;
@@ -1290,11 +1296,50 @@ from the "help guides" section due to same styling */
   justify-content: flex-start;
 }
 .mapAboutContainer div p {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-decoration: underline;
+  margin-bottom: 20px;
 }
 .mapAboutContainer i {
   color: #7c9ad0 !important;
+  font-size: 12px;
+}
+.mapGalleryMainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mapGalleryMainDiv div {
+  height: 120px !important;
+  background-color: #d5d5d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45% !important;
+  border-radius: 15px;
+  margin-bottom: 15px  
+}
+.mapButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0 0;
+}
+.mapButtonContainer div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapButtonContainer div button {
+  width: 120px;
+  padding: 6px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #93c01f;
 }
 
 .osmMapBody {
