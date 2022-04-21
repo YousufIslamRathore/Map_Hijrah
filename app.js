@@ -110,3 +110,7 @@ function mapContentSlider(e) {
         e.innerHTML = "<"
     }
 }
+
+function fundRaiser() {
+    window.location.assign("https://www.justgiving.com/crowdfunding/hijrahmap-project?utm_term=vE9GWxXKY")
+}
