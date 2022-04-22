@@ -14,7 +14,7 @@ header {
 }
 
 .homePage {
-  min-height: 100vh;
+  min-height: 90vh;
   background-image: url("./Assets/Backgroud-Images/Maps12345\ 8-01.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +84,6 @@ header {
 .mainBody {
   text-align: center;
 }
-
 .mainHeading {
   color: #6b8927;
   font-size: 48px;
@@ -97,6 +96,9 @@ header {
   color: #3a6e83;
   line-height: 1.3rem;
   padding: 0 20px;
+}
+.responsiveHomePageP {
+  display: none;
 }
 .mainBody div {
   margin-top: 20px;
@@ -113,7 +115,13 @@ header {
   border-radius: 20px;
   margin-bottom: 30px;
 }
-
+.responsiveHomePagePic {
+  display: none;
+  text-align: center;
+}
+.responsiveHomePagePic img {
+  width: 80%;
+}
 /* ///// Section 2 ///// */
 
 .section2 {
@@ -278,10 +286,21 @@ header {
 }
 @media only screen and (max-width: 576px) {
   .homePage {
-    background-image: url("./Assets/Backgroud-Images/Maps12345\ 14-01.png");
+    min-height: 85vh;
+    background-image: none;
+    background: linear-gradient(to bottom, #ffffff, #bbe7f7);
+  }
+  .mainHeading {
+    font-size: 28px;
   }
   .mainBody p {
     display: none;
+  }
+  .responsiveHomePageP {
+    display: block !important;
+  }
+  .responsiveHomePagePic {
+    display: block;
   }
 }
 
@@ -631,7 +650,7 @@ footer {
   box-shadow: 0px 0px 5px 2px #bcd53b;
 }
 .titleDiv2 {
-  margin-top: 150px;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .titleDiv3 {
@@ -2355,12 +2374,10 @@ fieldset form button:hover {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .subpageTopBody > section {
   width: 40%;
   padding-left: 30px;
 }
-
 .subpageTopBody h1 {
   font-size: 42px;
   font-weight: bold;
@@ -2390,16 +2407,13 @@ fieldset form button:hover {
   color: white;
   margin: 5px 30px 5px 0px;
 }
-
 .subpageTopBody > div {
   width: 60%;
   text-align: right;
 }
-
 .subpageTopBody img {
   width: 80%;
 }
-
 .subpageTopSection {
   margin: 20px;
 }
@@ -2415,11 +2429,9 @@ fieldset form button:hover {
   border-radius: 25px;
   cursor: pointer;
 }
-
 .subpageContentContainer {
   padding: 50px 120px;
 }
-
 .subpageContent {
   display: flex;
   align-items: center;
@@ -2435,21 +2447,18 @@ fieldset form button:hover {
   width: 20%;
   border-radius: 5px;
 }
-
 .subpageContent h1 {
   color: #3b6c82;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
 }
-
 .subpageContent p {
   line-height: 16px;
   color: #3b6c82;
   margin: 0;
   margin-bottom: 5px;
 }
-
 .subpageContent span {
   color: #6a8fd3;
   cursor: pointer;
@@ -2457,7 +2466,6 @@ fieldset form button:hover {
 .subpageContent span i {
   font-size: 15px;
 }
-
 .subpageContent div img {
   width: 100%;
   border-radius: 5px;
@@ -2502,6 +2510,29 @@ fieldset form button:hover {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+}
+
+.servicesSubPageBody {
+  margin: 0 auto;
+  width: 60%;
+}
+.subpageInputSection {
+  padding: 0 !important;
+}
+.servicesSubPageBody label {
+  font-size: 16px !important;
+}
+.servicesSubPageBody input[type="radio"] {
+  margin-right: 8px;
+}
+.servicesSubPageBody p, .servicesSubPageBody li {
+  color: #5c8795;
+}
+.servicesSubPageBody ul {
+  list-style-position: inside;
+}
+.servicesSubPageBody h5 {
+  color: #5c8795;
 }
 
 /* ///// Responsive CSS for Subpages //// */
@@ -2709,6 +2740,19 @@ fieldset form button:hover {
 .dpSUP section input {
   color: rgba(0, 0, 0, 0);
   width: 100%;
+}
+.dpSUP main {
+  padding-top: 30px;
+}
+.dpSUP button {
+  width: 180px;
+  border: none;
+  padding: 5px;
+  color: white;
+  background-color: #b5cf3a;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
 }
 .signUpProfileMainSection label {
   color: #5c8795;
