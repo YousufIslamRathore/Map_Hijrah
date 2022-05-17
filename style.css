@@ -1381,15 +1381,19 @@ from the "help guides" section due to same styling */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 420px;
   height: 80px;
 }
 .colorNavigator div {
   width: 50%;
   text-align: left;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 .colorNavigator i {
   font-size: 20px;
+  margin-right: 5px;
 }
 .osmMapBody h1 {
   display: none;
@@ -1436,6 +1440,7 @@ from the "help guides" section due to same styling */
   }
   .colorNavigator {
     right: 50px;
+    width: 400px;
   }
 }
 /* ///// Map END ///// */
@@ -1795,7 +1800,10 @@ from the "help guides" section due to same styling */
     width: 100% !important;
   }
 }
-
+.newChange {
+  color: #5c8795;
+  font-size: 20px;
+}
 /* ///// Sign Up Form & Log In Form ///// */
 
 fieldset {
@@ -2189,6 +2197,7 @@ fieldset form button:hover {
 .botMessageContainer {
   background-color: #bcd53b;
   border: 3px solid #bcd53b;
+  color: white;
 }
 .chatMessageContent h4 {
   font-size: 14px;
@@ -2735,7 +2744,7 @@ fieldset form button:hover {
 .dpSUP section input::-webkit-file-upload-button {
   border-radius: 5px;
   border: 3px solid #cacaca;
-  color: #cacaca;
+  color: #5c8795;
 }
 .dpSUP section input {
   color: rgba(0, 0, 0, 0);
